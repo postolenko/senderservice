@@ -7,24 +7,18 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 var sly;
 
 $(window).on("load", function (e) {
-
     if( $(".scrollbar_box").length > 0 ) {
         $(".scrollbar_box").mCustomScrollbar();
-    }    
-
+    }
 });
 
 $(window).resize(function() {
-
     if( $(".slider_2").length > 0 ) {
         sly.reload();
     }
-
 });
 
 $(document).scroll(function() {
-
-
 
 });
 
