@@ -1,0 +1,14 @@
+# http://postolenko.github.io/sender_service/index.html
+# http://postolenko.github.io/sender_service/news.html
+# http://postolenko.github.io/sender_service/january.html
+# http://postolenko.github.io/sender_service/february.html
+# http://postolenko.github.io/sender_service/march.html
+# http://postolenko.github.io/sender_service/april.html
+# http://postolenko.github.io/sender_service/may.html
+# http://postolenko.github.io/sender_service/june.html
+# http://postolenko.github.io/sender_service/july.html
+# http://postolenko.github.io/sender_service/august.html
+# http://postolenko.github.io/sender_service/september.html
+# http://postolenko.github.io/sender_service/october.html
+# http://postolenko.github.io/sender_service/november.html
+# http://postolenko.github.io/sender_service/december.html
