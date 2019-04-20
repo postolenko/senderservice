@@ -190,6 +190,14 @@ $(document).ready(function() {
         $('body,html').animate({scrollTop: top}, 1500);
     });
 
+    // Smooth scroll
+    $('.smooth_scroll').click(function(e){
+        e.preventDefault();
+        var coord = $(this).attr("href");
+        var top = $(coord).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+
     // ----------------
     // Sliders
 
