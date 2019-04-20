@@ -860,6 +860,18 @@
 
 	/*-- /Section 1 - Main Page - Desember --*/
 
+	/*-- Section 1 - Main Page - June --*/
+
+	.june_01 {
+		width: 157px;
+	}
+
+	.june_02 {
+	    width: 157px;
+	}
+
+	/*-- /Section 1 - Main Page - June --*/
+
 	/*-- Footer --*/
 
 	.footer_section {
@@ -1325,14 +1337,6 @@
 	/*-- /Section 1 - Main Page - January --*/
 
 	/*-- Section 1 - Main Page - June --*/
-
-	.june_01 {
-		width: 157px;
-	}
-
-	.june_02 {
-	    width: 157px;
-	}
 
 	.june_03 {
 	    width: 52px;
