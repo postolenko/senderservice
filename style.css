@@ -1185,7 +1185,7 @@ textarea:focus {
     color: #ffffff;
 }
 
-.promo_desc p {
+.promo_desc h2 {
     padding: 9px 0;
     letter-spacing: 12.5px;
     font-size: 24px;
