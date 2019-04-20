@@ -262,6 +262,44 @@ $(document).ready(function() {
             $(".thumb_3").addClass("w_2");
         }
 
+        // Social
+
+        $(this).on("click",".social_list a",function(e){
+            e.preventDefault();
+
+            let url=encodeURIComponent(location.href.split("#").shift()),
+                desc=encodeURIComponent( $("meta[name=description]").attr("content") ),
+                title=encodeURIComponent(document.title),
+                info='scrollbars=yes,width=600,height=400';
+
+            switch($(this).data("id"))
+            {
+                case'fb':
+                    open('https://www.facebook.com/sharer/sharer.php?u='+url,'share',info);
+                break;
+                case'vk':
+                    open('https://vk.com/share.php?url='+url+'&description='+title+'. '+desc,'share',info);
+                break;
+                case'tw':
+                    var text = title || desc || '';
+
+                    if(title.length > 0 && desc.length > 0)
+                        text = title + ' - ' + desc;
+
+                    if(text.length > 0)
+                        text = '&text=' + text;
+
+                    open('https://twitter.com/intent/tweet?url='+url+text,'share',info);
+                break;
+                case'gp':
+                    open('https://plus.google.com/share?url='+url,'share',info);
+                break;
+                case'ok':
+                    open('https://connect.ok.ru/dk?st.cmd=WidgetSharePreview&st.shareUrl='+url,'share',info);
+                break;
+            }
+        })
+
     }
 
     // ---------------------------
