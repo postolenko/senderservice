@@ -1063,6 +1063,10 @@ textarea:focus {
     background: #ffffff;
 }
 
+.respmenubtn.active {
+    background: #f7338d;
+}
+
 .respmenubtn.active span:last-child {
     display: none;
 }
