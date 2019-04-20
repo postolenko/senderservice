@@ -2363,6 +2363,7 @@ textarea:focus {
 
 .sect_6 {
     padding: 15px 0;
+    overflow-x: hidden;
 }
 
 .thumb_2 {
