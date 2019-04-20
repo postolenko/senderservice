@@ -8,7 +8,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Denis Postolenko</title>
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
+	<title>Service Sender</title>
 </head>
 
 <body>
@@ -18,11 +19,10 @@
 	<!-- Header -->
 		
 	<header>
-
 		<div class="header_site">
 			<div class="clearfix">
 				<div class="left">
-					<div class="main-nav_wrapp" id="resp_nav">
+					<div class="main_nav_wrapp" id="resp_nav">
 						<nav>
 							<ul class="main_nav">
 								<li>
@@ -41,25 +41,52 @@
 									<a href="#">кабинет агентства</a>
 								</li>
 								<li>
-									<a href="#">Вход в статистику</a>
-									<ul>
-										<li><a href="#">Link 1</a></li>
-										<li><a href="#">Link 2</a></li>
-										<li><a href="#">Link 3</a></li>
-										<li><a href="#">Link 4</a></li>
-									</ul>
+									<a href="#" class="dropdown_toggle">Вход в статистику</a>
+									<div class="dropdown_box">
+										<ul>
+											<li class="text_uppercase">Svadba (top-dates)</li>
+											<li><a href="/ru/top-dates-girl"><i class="fa fa-chevron-right"></i> Для девочки</a></li>
+											<li><a href="/ru/top-dates-translator"><i class="fa fa-chevron-right"></i> Для переводчика</a></li>
+											<li><a href="/ru/top-dates-branch"><i class="fa fa-chevron-right"></i> Для филиалов</a></li>
+											<li><a href="/ru/top-dates-operator"><i class="fa fa-chevron-right"></i> Для операторов</a></li>
+										</ul>
+										<ul>
+											<li class="text_uppercase">Prime.Date</li>
+											<li><a href="/ru/stats-prime-date-girl"><i class="fa fa-chevron-right"></i> Для девочки</a></li>
+											<li><a href="/ru/stats-prime-date-operator"><i class="fa fa-chevron-right"></i> Для операторов</a></li>
+										</ul>
+										<ul>
+											<li><a href="/ru/stats-zolushka-girl">Zolushka для девочки</a></li>
+											<li><a href="/ru/stats-zolushka-translator">Zolushka для переводчика</a></li>
+											<li><a href="/ru/stats-hanuma-girl">Hanuma для девочки</a></li>
+											<li><a href="/ru/stats-hanuma-translator">Hanuma для переводчика</a></li>
+											<li><a href="/ru/stats-dream-girl">Mime для девочки</a></li>
+											<li><a href="/ru/stats-dream-translator">Mime для переводчика</a></li>
+											<li><a href="/ru/stats-jump-girl">Jump4Love для девочки</a></li>
+											<li><a href="/ru/stats-jump-translator">Jump4Love для переводчика</a></li>
+											<li><a href="/ru/stats-romance-girl">Romance для девочки</a></li>
+											<li><a href="/ru/stats-romance-translator">Romance для переводчика</a></li>
+											<li><a href="/ru/stats-charming-girl">Charming для девочки</a></li>
+											<li><a href="/ru/stats-charming-translator">Charming для переводчика</a></li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<a href="#">TeamViewer</a>
 								</li>
 								<li>
 									<a href="#">Google Chrome</a>
-									<ul>
-										<li><a href="#">Link 1</a></li>
-										<li><a href="#">Link 2</a></li>
-										<li><a href="#">Link 3</a></li>
-										<li><a href="#">Link 4</a></li>
-									</ul>
+									<div class="dropdown_box">
+										<ul>
+											<li><a target="_blank" rel="nofollow" href="//browser.yandex.ru">Yandex Browser</a></li>
+											<li><a target="_blank" rel="nofollow" href="//www.google.com/chrome/browser/canary.html">Google Chrome Canary</a></li>
+											<li><a target="_blank" rel="nofollow" href="//www.comodo.com/home/browsers-toolbars/browser.php">Comodo Dragon</a></li>
+											<li><a target="_blank" rel="nofollow" href="//amigo.mail.ru/">Amigo Browser</a></li>
+											<li><a target="_blank" rel="nofollow" href="//torchbrowser.com/">Torch Browser</a></li>
+											<li><a target="_blank" rel="nofollow" href="//vivaldi.com/">Vivaldi</a></li>
+											<li><a target="_blank" rel="nofollow" href="//orbitum.com/">Orbitum</a></li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 						</nav>
@@ -75,18 +102,22 @@
 						<ul class="main_nav lang_menu">
 							<li>
 								<a href="#" class="active">Eng</a>
-								<ul>
-									<li><a href="#">ENG</a></li>
-									<li><a href="#">RU</a></li>
-									<li><a href="#">LAT</a></li>
-								</ul>
+								<div class="dropdown_box">
+									<ul>
+										<li class="text_uppercase">ENG</li>
+										<li><a href="/ru/top-dates-girl">RU</a></li>
+										<li><a href="/ru/top-dates-translator">LAT</a></li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
+					<a href="#video" class="playVideo circle_btn resp_btn_2">
+						<i class="fas fa-pause"></i>
+					</a>
 				</div>
 			</div>
-		</div>
-								
+		</div>								
 	</header>
 
 	<!-- /Header -->
@@ -101,14 +132,8 @@
 			<img class="april_01" src="img/april_01.png" alt="" />
 			<img class="april_02" src="img/april_02.png" alt="" />
 
-			<div class="video_wrapp" style="background-image: url(video/videobg.jpg);">
-				<video autoplay="autoplay" loop="loop" muted="muted" id="promoVideo" poster="video/videobg.jpg" class="loadVideo">
-					<source src="video/video.ogv" type='video/ogg; codecs="theora, vorbis"'>
-					<source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-					<source src="video/video.webm" type='video/webm; codecs="vp8, vorbis"'>
-					Тег video не поддерживается вашим браузером. 
-					<a href="video/video.mp4">Скачайте видео</a>.
-				</video>
+			<div class="video_wrapp">
+				 <div id="video"></div>
 			</div>
 			<div class="row">
 				<div class="center">					
@@ -117,29 +142,31 @@
 						<h1>SENDER.SERVICES</h1>
 						<p>БОТ ПРОГРАММЫ РАССЫЛКИ ДЛЯ БРАЧНЫХ АГЕНТСТВ</p>
 					</div>
-				</div>
-				<div class="promo_footer clearfix">
-					<div class="left">
-						<ul class="social_list">
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-vk"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
-							<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-						</ul>
-					</div>
-					<a href="#more" class="scroll_down">
-						<p>Узнать больше</p>
-					</a>
-					<div class="right">
-						<div class="video_controls">
-							<button type="button" class="circle_btn" id="playVideo">
-								<i class="fas fa-pause"></i>
-								<i class="fas fa-play"></i>
-							</button>
+					<div class="promo_footer clearfix">
+						<div class="left">
+							<ul class="social_list">
+								<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="#"><i class="fab fa-vk"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+								<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="video_controls">
+								<a href="#video" class="circle_btn playVideo">
+									<i class="fas fa-pause"></i>
+								</a>
+							</div>
 						</div>
 					</div>
-				</div>
+				</div>				
+				<a href="#more" class="scroll_down">
+					<p>Узнать больше</p>
+				</a>
+				<a href="#video" class="circle_btn resp_btn_1 playVideo">
+					<i class="fas fa-pause"></i>
+				</a>
 			</div>
 		</section>
 
@@ -182,16 +209,16 @@
 	</div>
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 	<script src="slick/slick.js"></script>
-	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="vendors/js/jquery.fancybox.js"></script>
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/sly.js"></script>
+	<script src="js/youtubebackground.js"></script>
+	<script src="https://vk.com/js/api/openapi.js?160" async></script>
 	<script src="js/scripts.js"></script>
 
 </body>

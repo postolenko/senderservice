@@ -7,9 +7,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Denis Postolenko</title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	<title>Service Sender</title>
+	<link rel="shortcut icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 </head>
 
 <body>
@@ -19,11 +19,10 @@
 	<!-- Header -->
 		
 	<header>
-
 		<div class="header_site">
 			<div class="clearfix">
 				<div class="left">
-					<div class="main-nav_wrapp" id="resp_nav">
+					<div class="main_nav_wrapp" id="resp_nav">
 						<nav>
 							<ul class="main_nav">
 								<li>
@@ -42,25 +41,52 @@
 									<a href="#">кабинет агентства</a>
 								</li>
 								<li>
-									<a href="#">Вход в статистику</a>
-									<!-- <ul>
-										<li><a href="#">Link 1</a></li>
-										<li><a href="#">Link 2</a></li>
-										<li><a href="#">Link 3</a></li>
-										<li><a href="#">Link 4</a></li>
-									</ul> -->
+									<a href="#" class="dropdown_toggle">Вход в статистику</a>
+									<div class="dropdown_box">
+										<ul>
+											<li class="text_uppercase">Svadba (top-dates)</li>
+											<li><a href="/ru/top-dates-girl"><i class="fa fa-chevron-right"></i> Для девочки</a></li>
+											<li><a href="/ru/top-dates-translator"><i class="fa fa-chevron-right"></i> Для переводчика</a></li>
+											<li><a href="/ru/top-dates-branch"><i class="fa fa-chevron-right"></i> Для филиалов</a></li>
+											<li><a href="/ru/top-dates-operator"><i class="fa fa-chevron-right"></i> Для операторов</a></li>
+										</ul>
+										<ul>
+											<li class="text_uppercase">Prime.Date</li>
+											<li><a href="/ru/stats-prime-date-girl"><i class="fa fa-chevron-right"></i> Для девочки</a></li>
+											<li><a href="/ru/stats-prime-date-operator"><i class="fa fa-chevron-right"></i> Для операторов</a></li>
+										</ul>
+										<ul>
+											<li><a href="/ru/stats-zolushka-girl">Zolushka для девочки</a></li>
+											<li><a href="/ru/stats-zolushka-translator">Zolushka для переводчика</a></li>
+											<li><a href="/ru/stats-hanuma-girl">Hanuma для девочки</a></li>
+											<li><a href="/ru/stats-hanuma-translator">Hanuma для переводчика</a></li>
+											<li><a href="/ru/stats-dream-girl">Mime для девочки</a></li>
+											<li><a href="/ru/stats-dream-translator">Mime для переводчика</a></li>
+											<li><a href="/ru/stats-jump-girl">Jump4Love для девочки</a></li>
+											<li><a href="/ru/stats-jump-translator">Jump4Love для переводчика</a></li>
+											<li><a href="/ru/stats-romance-girl">Romance для девочки</a></li>
+											<li><a href="/ru/stats-romance-translator">Romance для переводчика</a></li>
+											<li><a href="/ru/stats-charming-girl">Charming для девочки</a></li>
+											<li><a href="/ru/stats-charming-translator">Charming для переводчика</a></li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<a href="#">TeamViewer</a>
 								</li>
 								<li>
 									<a href="#">Google Chrome</a>
-									<!-- <ul>
-										<li><a href="#">Link 1</a></li>
-										<li><a href="#">Link 2</a></li>
-										<li><a href="#">Link 3</a></li>
-										<li><a href="#">Link 4</a></li>
-									</ul> -->
+									<div class="dropdown_box">
+										<ul>
+											<li><a target="_blank" rel="nofollow" href="//browser.yandex.ru">Yandex Browser</a></li>
+											<li><a target="_blank" rel="nofollow" href="//www.google.com/chrome/browser/canary.html">Google Chrome Canary</a></li>
+											<li><a target="_blank" rel="nofollow" href="//www.comodo.com/home/browsers-toolbars/browser.php">Comodo Dragon</a></li>
+											<li><a target="_blank" rel="nofollow" href="//amigo.mail.ru/">Amigo Browser</a></li>
+											<li><a target="_blank" rel="nofollow" href="//torchbrowser.com/">Torch Browser</a></li>
+											<li><a target="_blank" rel="nofollow" href="//vivaldi.com/">Vivaldi</a></li>
+											<li><a target="_blank" rel="nofollow" href="//orbitum.com/">Orbitum</a></li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 						</nav>
@@ -76,932 +102,934 @@
 						<ul class="main_nav lang_menu">
 							<li>
 								<a href="#" class="active">Eng</a>
-								<!-- <ul>
-									<li><a href="#">ENG</a></li>
-									<li><a href="#">RU</a></li>
-									<li><a href="#">LAT</a></li>
-								</ul> -->
+								<div class="dropdown_box">
+									<ul>
+										<li class="text_uppercase">ENG</li>
+										<li><a href="/ru/top-dates-girl">RU</a></li>
+										<li><a href="/ru/top-dates-translator">LAT</a></li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
+					<a href="#video" class="playVideo circle_btn resp_btn_2">
+						<i class="fas fa-pause"></i>
+					</a>
 				</div>
 			</div>
-		</div>
-								
+		</div>								
 	</header>
 
 	<!-- /Header -->
 
 	<!-- Content -->
-		<div class="content">
+	<div class="content">
+		<main>
 
-		<!-- Section 1 - Main Page -->
+			<!-- Section 1 - Main Page -->
 
-		<section class="promo_sect">
-			<div class="video_wrapp" style="background-image: url(video/videobg.jpg);">
-				<video autoplay="autoplay" loop="loop" muted="muted" id="promoVideo" poster="video/videobg.jpg" class="loadVideo">
-					<source src="video/video.ogv" type='video/ogg; codecs="theora, vorbis"'>
-					<source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-					<source src="video/video.webm" type='video/webm; codecs="vp8, vorbis"'>
-					Тег video не поддерживается вашим браузером. 
-					<a href="video/video.mp4">Скачайте видео</a>.
-				</video>
-			</div>
-			<div class="row">
-				<div class="center">					
-					<div class="center_inner promo_desc">
-						<img class="logo" src="img/logo.png" alt="" />
-						<h1>SENDER.SERVICES</h1>
-						<p>БОТ ПРОГРАММЫ РАССЫЛКИ ДЛЯ БРАЧНЫХ АГЕНТСТВ</p>
-					</div>
+			<section class="promo_sect">
+				<div class="video_wrapp">
+					 <div id="video"></div>
 				</div>
-				<div class="promo_footer clearfix">
-					<div class="left">
-						<ul class="social_list">
-							<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#"><i class="fab fa-vk"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
-							<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-						</ul>
-					</div>
+				<div class="row">
+					<div class="center">					
+						<div class="center_inner promo_desc">
+							<img class="logo" src="img/logo.png" alt="" />
+							<h1>SENDER.SERVICES</h1>
+							<p>БОТ ПРОГРАММЫ РАССЫЛКИ ДЛЯ БРАЧНЫХ АГЕНТСТВ</p>
+						</div>
+						<div class="promo_footer clearfix">
+							<div class="left">
+								<ul class="social_list">
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-vk"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+									<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+								</ul>
+							</div>						
+							<div class="right">
+								<div class="video_controls">
+									<a href="#video" class="circle_btn playVideo">
+										<i class="fas fa-pause"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>					
 					<a href="#more" class="scroll_down">
 						<p>Узнать больше</p>
 					</a>
-					<div class="right">
-						<div class="video_controls">
-							<button type="button" class="circle_btn" id="playVideo">
-								<i class="fas fa-pause"></i>
-								<i class="fas fa-play"></i>
-							</button>
+					<a href="#video" class="circle_btn resp_btn_1 playVideo">
+						<i class="fas fa-pause"></i>
+					</a>
+				</div>
+			</section>
+
+			<!-- /Section 1 - Main Page -->
+
+			<!-- Section 2 - Main Page -->
+
+			<section class="grey_bg" id="more">
+				<div class="row">
+
+					<div class="slider_news_wrapp">
+						<div class="slider_news">
+							<div class="slide">
+								<article>
+									<div class="news_article clearfix">
+										<div class="right">
+											<figure class="img_box">
+												<img src="img/img_01.png" alt="" />
+											</figure>
+										</div>
+										<div class="left">
+											<h2>Последние</h2>
+											<h2 class="red_h2">Новости</h2>
+											<p>Мы постоянно работаем над улучшением наших сервисов и публикуем информацию о нововведениях в специальном разделе. Будьте в курсе новостей!</p>
+										</div>										
+									</div>
+									<div class="align_center">
+										<a href="#" class="red_pill">Архив новостей</a>
+									</div>
+								</article>
+							</div>
+							<div class="slide">
+								<article>
+									<div class="news_article clearfix">
+										<div class="right">
+											<figure class="img_box">
+												<img src="img/img_02.png" alt="" />
+											</figure>
+										</div>
+										<div class="left">
+											<h2 class="red_h2_2">Открытые</h2>
+											<h2 class="h2_2">перспективы</h2>
+											<p>Мы постоянно улучшаем свой продукт, и пишем об этом ежемесячно</p>
+										</div>										
+									</div>
+									<div class="align_center">
+										<a href="#" class="red_pill">Подписаться но новости</a>
+									</div>
+								</article>
+							</div>
+							<div class="slide">
+								<article>
+									<div class="news_article clearfix">
+										<div class="right">
+											<figure class="img_box">
+												<img src="img/img_03.png" alt="" />
+											</figure>
+										</div>
+										<div class="left">
+											<h2 class="red_h2_2">Поддержка</h2>
+											<h2>клиентов</h2>
+											<p>Мы всегда готовы прийти к вам на помощь, у нас для этого есть все необходимые инструменты. В частности, лицензия на TeamViewer</p>
+										</div>										
+									</div>
+									<div class="align_center">
+										<a href="#" class="red_pill">Установить teamviewer</a>
+									</div>
+								</article>
+							</div>
+							<div class="slide">
+								<article>
+									<div class="news_article clearfix">
+										<div class="right">
+											<figure class="img_box">
+												<img src="img/img_04.png" alt="" />
+											</figure>
+										</div>
+										<div class="left">
+											<h2 class="red_h2_3">Одновременная</h2>
+											<h2>работа</h2>
+											<p>Теперь вы без лишних костылей можете сразу открыть все нужные вам анкеты и работать в них одновременно</p>
+										</div>										
+									</div>
+									<div class="align_center">
+										<a href="#" class="red_pill">Перейти к установке</a>
+									</div>
+								</article>
+							</div>
+							<div class="slide">
+								<article>
+									<div class="news_article clearfix">
+										<div class="right">
+											<figure class="img_box">
+												<img src="img/img_05.png" alt="" />
+											</figure>
+										</div>
+										<div class="left">
+											<h2 class="red_h2">Оплата</h2>
+											<h2>онлайн</h2>
+											<p>Мы принимаем рубли, доллары, евро и гривны. Активация анкет происходит автоматически после завершения оплаты</p>
+										</div>										
+									</div>
+									<div class="align_center">
+										<a href="#" class="red_pill">Перейти к оплате</a>
+									</div>
+								</article>
+							</div>
+							<div class="slide">
+								<article>
+									<div class="news_article clearfix">
+										<div class="right">
+											<figure class="img_box">
+												<img src="img/img_06.png" alt="" />
+											</figure>
+										</div>
+										<div class="left">
+											<h2 class="red_h2">Кабинет</h2>
+											<h2>агентства</h2>
+											<p>Контролируйте и управляйте девушками вагего агентства из удобного интерфейса</p>
+										</div>										
+									</div>
+									<div class="align_center">
+										<a href="#" class="red_pill">Перейти в кабинет</a>
+									</div>
+								</article>
+							</div>
+							<div class="slide">
+								<article>
+									<div class="news_article clearfix">
+										<div class="right">
+											<figure class="img_box">
+												<img src="img/img_07.png" alt="" />
+											</figure>
+										</div>
+										<div class="left">
+											<h2 class="red_h2_4">Сбор</h2>
+											<h2>статистики</h2>
+											<p>Мы собираем статистику заработка с сайтов. И позволяем девушкам видеть их доход</p>
+										</div>										
+									</div>
+									<div class="align_center">
+										<a href="#" class="red_pill">Перейти к установке</a>
+									</div>
+								</article>
+							</div>
+							<div class="slide">
+								<article>
+									<div class="news_article clearfix">
+										<div class="right">
+											<figure class="img_box">
+												<img src="img/img_08.png" alt="" />
+											</figure>
+										</div>
+										<div class="left">
+											<h2 class="red_h2_4">2 дня</h2>
+											<h2>бесплатно</h2>
+											<p>Без лишней скромности скажем, что у нас самый обширный список поддерживаемых сайтов</p>
+										</div>										
+									</div>
+									<div class="align_center">
+										<a href="#" class="red_pill">Перейти к списку сайтов</a>
+									</div>
+								</article>
+							</div>
 						</div>
 					</div>
+
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- /Section 1 - Main Page -->
+			<!-- /Section 2 - Main Page -->
 
-		<!-- Section 2 - Main Page -->
+			<!-- Section 3 - Main Page -->
 
-		<section class="grey_bg" id="more">
-			<div class="row">
+			<section class="sect_3 red_bg">
+				<div class="row">
 
-				<div class="slider_news_wrapp">
-					<div class="slider_news">
-						<div class="slide">
-							<article>
-								<div class="news_article clearfix">
+					<h2>Мы предлагаем:</h2>
+
+					<div class="tabs">
+						<div class="tabs_links_wrapp">
+							<div class="tabs_links">
+								<label class="tab_link active" for="tab_1"><span>Приложение</span></label>
+								<label class="tab_link" for="tab_2"><span>Расширение</span></label>
+		                    </div>
+		                </div>
+	                    <div class="tabs_content">
+	                    	<input type="radio" name="tabs" class="radio_tab" id="tab_1">
+	                        <div class="tab">
+	                        	<div class="article_header clearfix">
+	                        		<div class="left">
+		                        		<h3>Chrome приложение</h3>
+		                        	</div>
+		                        	<div class="right">
+		                        		<div class="pills_wrapp">
+		                        			<div class="pill_wrapp">
+				                        		<a href="#" class="white_pill">Установить</a>
+				                        	</div>
+				                        	<div class="pill_wrapp">
+				                        		<a href="#" class="pink_pill"><i class="fas fa-download"></i>Скачать</a>
+				                        	</div>
+			                        	</div>
+		                        	</div>
+	                        	</div>
+	                        	<div class="tabs_article clearfix">
+	                        		<div class="right">
+	                        			<div class="article_image">
+		                        			<figure>
+		                        				<img src="img/tab_img.png" alt="" />
+		                        			</figure>
+		                        		</div>
+	                        		</div>
+	                        		<div class="left">
+										<p>Это отдельная программа, которая, хотя и находится в среде браузера, тем не менее, полностью он него изолирована. Приложение работает само по себе, браузер – сам по себе. Они даже могут запускаться независимо друг от друга.</p>
+
+										<p>Преимущество приложения в том, что оно позволяет сделать бот более изощрённым и удобным. Однако, недостатки тоже имеются: поддержка приложений браузерами пока достаточно сыра и на практике выливается в мелких глюках (иногда может пропадать звук или повышаться расход памяти). Кроме того, Google обещал выпилить поддержку приложений из браузеров и оставить их только для Chrome OS. От части это можно решить, перейдя на NWjs</p>
+	                        		</div>	                        		
+	                        	</div>
+	                        	<div class="two_cols clearfix">
 									<div class="left">
-										<h2>Последние</h2>
-										<h2 class="red_h2">Новости</h2>
-										<p>Мы постоянно работаем над улучшением наших сервисов и публикуем информацию о нововведениях в специальном разделе. Будьте в курсе новостей!</p>
+										<div class="thumb_pills">
+											<p>Вы можете запускать приложение с помощью загрузчика</p>
+											<div class="inline_pills">
+												<div class="pill_wrapp">
+													<a href="#" class="pink_pill_2"><i class="fas fa-download"></i>СКАЧАТЬ ЗАГРУЗЧИК</a>
+												</div>
+											</div>
+										</div>
 									</div>
-									<div class="right">
-										<figure class="img_box">
-											<img src="img/img_01.png" alt="" />
-										</figure>
+	                        		<div class="right">
+	                        			<div class="thumb_pills">
+		                        			<p>Специальная редакция приложения</p>
+		                        			<div class="inline_pills">
+												<div class="pill_wrapp">
+													<a href="#" class="pink_pill_2"><i class="fab fa-windows"></i>WINDOWS X64</a>
+												</div>
+												<div class="pill_wrapp">
+													<a href="#" class="pink_pill_2"><i class="fab fa-windows"></i>WINDOWS X32</a>
+												</div>
+												<div class="pill_wrapp">
+													<a href="#" class="pink_pill_2"><i class="fab fa-apple"></i>MACOS</a>
+												</div>
+											</div>
+										</div>
 									</div>
-								</div>
-								<div class="align_center">
-									<a href="#" class="red_pill">Архив новостей</a>
-								</div>
-							</article>
-						</div>
-						<div class="slide">
-							<article>
-								<div class="news_article clearfix">
-									<div class="left">
-										<h2 class="red_h2_2">Открытые</h2>
-										<h2 class="h2_2">перспективы</h2>
-										<p>Мы постоянно улучшаем свой продукт, и пишем об этом ежемесячно</p>
-									</div>
-									<div class="right">
-										<figure class="img_box">
-											<img src="img/img_02.png" alt="" />
-										</figure>
-									</div>
-								</div>
-								<div class="align_center">
-									<a href="#" class="red_pill">Подписаться но новости</a>
-								</div>
-							</article>
-						</div>
-						<div class="slide">
-							<article>
-								<div class="news_article clearfix">
-									<div class="left">
-										<h2 class="red_h2_2">Поддержка</h2>
-										<h2>клиентов</h2>
-										<p>Мы всегда готовы прийти к вам на помощь, у нас для этого есть все необходимые инструменты. В частности, лицензия на TeamViewer</p>
-									</div>
-									<div class="right">
-										<figure class="img_box">
-											<img src="img/img_03.png" alt="" />
-										</figure>
-									</div>
-								</div>
-								<div class="align_center">
-									<a href="#" class="red_pill">Установить teamviewer</a>
-								</div>
-							</article>
-						</div>
-						<div class="slide">
-							<article>
-								<div class="news_article clearfix">
-									<div class="left">
-										<h2 class="red_h2_3">Одновременная</h2>
-										<h2>работа</h2>
-										<p>Теперь вы без лишних костылей можете сразу открыть все нужные вам анкеты и работать в них одновременно</p>
-									</div>
-									<div class="right">
-										<figure class="img_box">
-											<img src="img/img_04.png" alt="" />
-										</figure>
-									</div>
-								</div>
-								<div class="align_center">
-									<a href="#" class="red_pill">Перейти к установке</a>
-								</div>
-							</article>
-						</div>
-						<div class="slide">
-							<article>
-								<div class="news_article clearfix">
-									<div class="left">
-										<h2 class="red_h2">Оплата</h2>
-										<h2>онлайн</h2>
-										<p>Мы принимаем рубли, доллары, евро и гривны. Активация анкет происходит автоматически после завершения оплаты</p>
-									</div>
-									<div class="right">
-										<figure class="img_box">
-											<img src="img/img_05.png" alt="" />
-										</figure>
-									</div>
-								</div>
-								<div class="align_center">
-									<a href="#" class="red_pill">Перейти к оплате</a>
-								</div>
-							</article>
-						</div>
-						<div class="slide">
-							<article>
-								<div class="news_article clearfix">
-									<div class="left">
-										<h2 class="red_h2">Кабинет</h2>
-										<h2>агентства</h2>
-										<p>Контролируйте и управляйте девушками вагего агентства из удобного интерфейса</p>
-									</div>
-									<div class="right">
-										<figure class="img_box">
-											<img src="img/img_06.png" alt="" />
-										</figure>
-									</div>
-								</div>
-								<div class="align_center">
-									<a href="#" class="red_pill">Перейти в кабинет</a>
-								</div>
-							</article>
-						</div>
-						<div class="slide">
-							<article>
-								<div class="news_article clearfix">
-									<div class="left">
-										<h2 class="red_h2_4">Сбор</h2>
-										<h2>статистики</h2>
-										<p>Мы собираем статистику заработка с сайтов. И позволяем девушкам видеть их доход</p>
-									</div>
-									<div class="right">
-										<figure class="img_box">
-											<img src="img/img_07.png" alt="" />
-										</figure>
-									</div>
-								</div>
-								<div class="align_center">
-									<a href="#" class="red_pill">Перейти к установке</a>
-								</div>
-							</article>
-						</div>
-						<div class="slide">
-							<article>
-								<div class="news_article clearfix">
-									<div class="left">
-										<h2 class="red_h2_4">2 дня</h2>
-										<h2>бесплатно</h2>
-										<p>Без лишней скромности скажем, что у нас самый обширный список поддерживаемых сайтов</p>
-									</div>
-									<div class="right">
-										<figure class="img_box">
-											<img src="img/img_08.png" alt="" />
-										</figure>
-									</div>
-								</div>
-								<div class="align_center">
-									<a href="#" class="red_pill">Перейти к списку сайтов</a>
-								</div>
-							</article>
-						</div>
-					</div>
-				</div>
+	                        	</div>
+	                        </div>
+	                        <input type="radio" name="tabs" class="radio_tab" id="tab_2">
+	                        <div class="tab">
+	                        	<div class="article_header clearfix">
+	                        		<div class="left">
+		                        		<h3>Chrome расширение</h3>
+		                        	</div>
+		                        	<div class="right">
+		                        		<div class="pills_wrapp">
+		                        			<div class="pill_wrapp">
+				                        		<a href="#" class="white_pill">Установить</a>
+				                        	</div>
+				                        	<div class="pill_wrapp">
+				                        		<a href="#" class="pink_pill"><i class="fas fa-download"></i>Скачать</a>
+				                        	</div>
+			                        	</div>
+		                        	</div>
+	                        	</div>
+	                        	<div class="tabs_article clearfix">
+	                        		<div class="right">
+	                        			<div class="article_image">
+		                        			<figure>
+		                        				<img src="img/tab_img_02.jpg" alt="" />
+		                        			</figure>
+		                        		</div>
+	                        		</div>
+	                        		<div class="left">
+										<p>Это дополнение, которое встраивается напрямую в сайт и манипулирует им прямо в окне браузера. Поскольку интерфейс Google Chrome заточен именно под просмотр сайтов, для расширений в нем отводится второстепенное место.</p>
 
-			</div>
-		</section>
+										<p>Это является основным недостатком: пользоваться расширением, возможно, будет не так удобно, как приложением, кроме того некоторые «фишки» вроде мигания вкладок при входящем сообщении реализовать попросту невозможно.</p>
 
-		<!-- /Section 2 - Main Page -->
-
-		<!-- Section 3 - Main Page -->
-
-		<section class="sect_3 red_bg">
-			<div class="row">
-
-				<h2>Мы предлагаем:</h2>
-
-				<div class="tabs">
-					<div class="tabs_links_wrapp">
-						<div class="tabs_links">
-							<label class="tab_link active" for="tab_1"><span>Приложение</span></label>
-							<label class="tab_link" for="tab_2"><span>Расширение</span></label>
-	                    </div>
+										<p>Для минимизации неудобств, предлагаем выделить отдельный браузер, который будет использоваться преимущественно для рассылки сообщений ботом. Также отметим, что расширение ведет себя более стабильно и предсказуемо.</p>
+	                        		</div>	                        		
+	                        	</div>
+	                        	<div class="two_cols clearfix">
+									<div class="left">
+										<div class="thumb_pills">
+											<div class="thumb_pills_templ">
+												<div class="cell">
+													<p>Браузер с интегрированным расширением</p>
+												</div>
+												<div class="cell">
+													<a href="#" class="pink_pill_2"><i class="fas fa-download"></i>Скачать Opera</a>
+												</div>
+											</div>
+										</div>
+									</div>
+	                        		<div class="right">
+	                        			<div class="thumb_pills">
+	                        				<div class="thumb_pills_templ">
+			                        			<div class="cell">
+			                        				<p>Версия для Яндекс.браузера</p>
+			                        			</div>
+												<div class="cell">
+													<a href="#" class="pink_pill_2"><i class="fas fa-arrow-right"></i>установить</a>
+												</div>
+											</div>
+										</div>
+									</div>
+	                        	</div>
+	                        </div>
+	                	</div>
 	                </div>
-                    <div class="tabs_content">
-                    	<input type="radio" name="tabs" class="radio_tab" id="tab_1">
-                        <div class="tab">
-                        	<div class="article_header clearfix">
-                        		<div class="left">
-	                        		<h3>Chrome приложение</h3>
-	                        	</div>
-	                        	<div class="right">
-	                        		<div class="pills_wrapp">
-	                        			<div class="pill_wrapp">
-			                        		<a href="#" class="white_pill">Установить</a>
-			                        	</div>
-			                        	<div class="pill_wrapp">
-			                        		<a href="#" class="pink_pill"><i class="fas fa-download"></i>Скачать</a>
-			                        	</div>
-		                        	</div>
-	                        	</div>
-                        	</div>
-                        	<div class="tabs_article clearfix">
-                        		<div class="left">
-									<p>Это отдельная программа, которая, хотя и находится в среде браузера, тем не менее, полностью он него изолирована. Приложение работает само по себе, браузер – сам по себе. Они даже могут запускаться независимо друг от друга.</p>
 
-									<p>Преимущество приложения в том, что оно позволяет сделать бот более изощрённым и удобным. Однако, недостатки тоже имеются: поддержка приложений браузерами пока достаточно сыра и на практике выливается в мелких глюках (иногда может пропадать звук или повышаться расход памяти). Кроме того, Google обещал выпилить поддержку приложений из браузеров и оставить их только для Chrome OS. От части это можно решить, перейдя на NWjs</p>
-                        		</div>
-                        		<div class="right">
-                        			<div class="article_image">
-	                        			<figure>
-	                        				<img src="img/tab_img.png" alt="" />
-	                        			</figure>
-	                        		</div>
-                        		</div>
-                        	</div>
-                        	<div class="two_cols clearfix">
-								<div class="left">
-									<div class="thumb_pills">
-										<p>Вы можете запускать приложение с помощью загрузчика</p>
-										<div class="inline_pills">
-											<div class="pill_wrapp">
-												<a href="#" class="pink_pill_2"><i class="fas fa-download"></i>СКАЧАТЬ ЗАГРУЗЧИК</a>
+	                <div class="slider_2_wrapp">
+						<div class="slider_2_title clearfix">
+							<div class="col">
+								<h3>Готовы к работе:</h3>
+							</div>
+							<div class="col">
+								<p>всего плагинов: 58</p>
+							</div>
+						</div>
+						<div class="sly_block_wrapp">
+							<div class="sly_block">
+								<div class="slider_2 clearfix">
+									<div class="slide">
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/01.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Prime.date</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/05.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Mariya-club.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/09.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Mystep2love.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/02.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Russiandesire.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/03.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Asiame.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/10.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Romancecompass.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/03.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Latamdate.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/07.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Jump4love.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/11.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Loveinchat.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/04.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Zolushka.net</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/08.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Victoriyaclub.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/12.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Veronikalove.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/01.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Prime.date</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/05.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Mariya-club.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/09.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Mystep2love.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/02.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Russiandesire.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/03.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Asiame.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/10.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Romancecompass.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/03.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Latamdate.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/07.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Jump4love.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/11.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Loveinchat.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+									</div>
+									<div class="slide">
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/03.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Zolushka.net</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/07.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Victoriyaclub.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
+											</div>
+										</div>
+										<div class="offer_thumb">
+											<div class="col">
+												<div class="hearth">
+													<img src="img/11.png" alt="" />
+												</div>
+											</div>
+											<div class="col">
+												<p>Veronikalove.com</p>
+												<ol class="functions_list">
+													<li><i class="fas fa-comments"></i><p>чат</p></li>
+													<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
+												</ol>
 											</div>
 										</div>
 									</div>
 								</div>
-                        		<div class="right">
-                        			<div class="thumb_pills">
-	                        			<p>Специальная редакция приложения</p>
-	                        			<div class="inline_pills">
-											<div class="pill_wrapp">
-												<a href="#" class="pink_pill_2"><i class="fab fa-windows"></i>WINDOWS X64</a>
-											</div>
-											<div class="pill_wrapp">
-												<a href="#" class="pink_pill_2"><i class="fab fa-windows"></i>WINDOWS X32</a>
-											</div>
-											<div class="pill_wrapp">
-												<a href="#" class="pink_pill_2"><i class="fab fa-apple"></i>MACOS</a>
-											</div>
-										</div>
+								
+							</div>
+							<div class="scrollbar">
+								<div class="handle"></div>
+							</div>
+						</div>					
+					</div>
+
+				</div>
+			</section>
+
+			<!-- /Section 3 - Main Page -->
+
+			<!-- Responsive BG - Main Page -->
+
+			<div class="resp_bg"></div>
+
+			<!-- /Responsive BG - Main Page -->
+
+			<!-- Section 4 - Main Page -->
+
+			<section class="sect_4 grey_bg">
+				<div class="row">
+					<div class="news_wrapp">
+						<h2>Новости</h2>
+						<div class="news_thumbs offset_ziro">
+							<div class="news_thumb clearfix">
+								<div class="col">
+									<div class="img_box">
+										<img src="img/news_01.jpg" alt="" />
 									</div>
 								</div>
-                        	</div>
-                        </div>
-                        <input type="radio" name="tabs" class="radio_tab" id="tab_2">
-                        <div class="tab">
-                        	<div class="article_header clearfix">
-                        		<div class="left">
-	                        		<h3>Chrome расширение</h3>
-	                        	</div>
-	                        	<div class="right">
-	                        		<div class="pills_wrapp">
-	                        			<div class="pill_wrapp">
-			                        		<a href="#" class="white_pill">Установить</a>
-			                        	</div>
-			                        	<div class="pill_wrapp">
-			                        		<a href="#" class="pink_pill"><i class="fas fa-download"></i>Скачать</a>
-			                        	</div>
-		                        	</div>
-	                        	</div>
-                        	</div>
-                        	<div class="tabs_article clearfix">
-                        		<div class="left">
-									<p>Это дополнение, которое встраивается напрямую в сайт и манипулирует им прямо в окне браузера. Поскольку интерфейс Google Chrome заточен именно под просмотр сайтов, для расширений в нем отводится второстепенное место.</p>
-
-									<p>Это является основным недостатком: пользоваться расширением, возможно, будет не так удобно, как приложением, кроме того некоторые «фишки» вроде мигания вкладок при входящем сообщении реализовать попросту невозможно.</p>
-
-									<p>Для минимизации неудобств, предлагаем выделить отдельный браузер, который будет использоваться преимущественно для рассылки сообщений ботом. Также отметим, что расширение ведет себя более стабильно и предсказуемо.</p>
-                        		</div>
-                        		<div class="right">
-                        			<div class="article_image">
-	                        			<figure>
-	                        				<img src="img/tab_img_02.jpg" alt="" />
-	                        			</figure>
-	                        		</div>
-                        		</div>
-                        	</div>
-                        	<div class="two_cols clearfix">
-								<div class="left">
-									<div class="thumb_pills">
-										<div class="thumb_pills_templ">
-											<div class="cell">
-												<p>Браузер с интегрированным расширением</p>
-											</div>
-											<div class="cell">
-												<a href="#" class="pink_pill_2"><i class="fas fa-download"></i>Скачать Opera</a>
-											</div>
-										</div>
+								<div class="col">
+									<h4>23 новых способа оплаты услуг Sender.Services</h4>
+									<div class="thumb_desc">
+										<p>Мы благополучно подключили новый шлюз оплаты - Интеркассу, благодаря которой стали доступными новые способы оплаты:</p>
+										<ol>
+											<li>Visa/MasterCard;</li>
+											<li>Приват24;</li>
+											<li>Liqpay;</li>
+											<li>Почта России;</li>
+										</ol>
+									</div>
+									<a href="#" class="red_link" title="">Подробнее<i class="fas fa-angle-right"></i></a>
+								</div>
+							</div>
+							<div class="news_thumb clearfix">
+								<div class="col">
+									<div class="img_box">
+										<img src="img/news_02.jpg" alt="" />
 									</div>
 								</div>
-                        		<div class="right">
-                        			<div class="thumb_pills">
-                        				<div class="thumb_pills_templ">
-		                        			<div class="cell">
-		                        				<p>Версия для Яндекс.браузера</p>
-		                        			</div>
-											<div class="cell">
-												<a href="#" class="pink_pill_2"><i class="fas fa-arrow-right"></i>установить</a>
-											</div>
-										</div>
+								<div class="col">
+									<h4>В сентябре мы успешно внедрили 2 новшества:</h4>
+									<div class="thumb_desc">
+										<p>Сбор статистики с agency.zolushka.net;</p>
+										<p>Сохранение и просмотр истории переписки на сайтах svadba.com, amolatinaladies.com, globalcompanions.com</p>
 									</div>
+									<a href="#" class="red_link" title="">Подробнее<i class="fas fa-angle-right"></i></a>
 								</div>
-                        	</div>
-                        </div>
-                	</div>
-                </div>
-
-                <div class="slider_2_wrapp">
-					<div class="slider_2_title clearfix">
-						<div class="col">
-							<h3>Готовы к работе:</h3>
-						</div>
-						<div class="col">
-							<p>всего плагинов: 58</p>
-						</div>
-					</div>
-					<div class="sly_block_wrapp">
-						<div class="sly_block">
-							<div class="slider_2 clearfix">
-								<div class="slide">
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/01.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Prime.date</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/05.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Mariya-club.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/09.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Mystep2love.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-								</div>
-								<div class="slide">
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/02.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Russiandesire.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/03.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Asiame.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/10.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Romancecompass.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-								</div>
-								<div class="slide">
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/03.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Latamdate.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/07.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Jump4love.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/11.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Loveinchat.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-								</div>
-								<div class="slide">
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/04.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Zolushka.net</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/08.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Victoriyaclub.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/12.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Veronikalove.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-								</div>
-								<div class="slide">
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/01.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Prime.date</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/05.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Mariya-club.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/09.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Mystep2love.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-								</div>
-								<div class="slide">
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/02.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Russiandesire.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/03.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Asiame.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/10.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Romancecompass.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-								</div>
-								<div class="slide">
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/03.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Latamdate.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/07.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Jump4love.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/11.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Loveinchat.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-								</div>
-								<div class="slide">
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/03.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Zolushka.net</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/07.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Victoriyaclub.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-									<a href="#" class="offer_thumb">
-										<div class="col">
-											<div class="hearth">
-												<img src="img/11.png" alt="" />
-											</div>
-										</div>
-										<div class="col">
-											<p>Veronikalove.com</p>
-											<ol class="functions_list">
-												<li><i class="fas fa-comments"></i><p>чат</p></li>
-												<li><i class="fas fa-envelope-open"></i><p>письма</p></li>
-											</ol>
-										</div>
-									</a>
-								</div>
-							</div>
-							
-						</div>
-						<div class="scrollbar">
-							<div class="handle"></div>
-						</div>
-					</div>					
-				</div>
-
-			</div>
-		</section>
-
-		<!-- /Section 3 - Main Page -->
-
-		<!-- Section 4 - Main Page -->
-
-		<section class="sect_4 grey_bg">
-			<div class="row">
-				<div class="news_wrapp">
-					<h2>Новости</h2>
-					<div class="news_thumbs offset_ziro">
-						<div class="news_thumb clearfix">
-							<div class="col">
-								<div class="img_box">
-									<img src="img/news_01.jpg" alt="" />
-								</div>
-							</div>
-							<div class="col">
-								<h4>23 новых способа оплаты услуг Sender.Services</h4>
-								<p>Мы благополучно подключили новый шлюз оплаты - Интеркассу, благодаря которой стали доступными новые способы оплаты:</p>
-								<ol>
-									<li>Visa/MasterCard;</li>
-									<li>Приват24;</li>
-									<li>Liqpay;</li>
-									<li>Почта России;</li>
-								</ol>
-								<a href="#" class="red_link" title="">Подробнее<i class="fas fa-angle-right"></i></a>
-							</div>
-						</div>
-						<div class="news_thumb clearfix">
-							<div class="col">
-								<div class="img_box">
-									<img src="img/news_02.jpg" alt="" />
-								</div>
-							</div>
-							<div class="col">
-								<h4>В сентябре мы успешно внедрили 2 новшества:</h4>
-								<p>Сбор статистики с agency.zolushka.net;</p>
-								<p>Сохранение и просмотр истории переписки на сайтах svadba.com, amolatinaladies.com, globalcompanions.com</p>
-								<a href="#" class="red_link" title="">Подробнее<i class="fas fa-angle-right"></i></a>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="align_center pill_wrapp_3">
-					<a href="#" class="red_pill">Архив новостей</a>
-				</div>
-			</div>
-		</section>
-
-		<!-- /Section 4 - Main Page -->
-
-		<!-- Section 5 - Main Page -->
-
-		<section class="sect_5 grey2_bg">
-			<div class="article_5_templ">
-				<div class="left_img">
-					<img src="img/left_img.jpg" alt="" />
-				</div>
-				<div class="row clearfix">
-					<div class="article_5_descript">
-						<h2>Sender.services</h2>
-						<div class="scrollbar_box">
-							<p>Изначально сервис строился для обслуживания своего бизнеса.</p>
-
-							<p>А всё то, что делается для себя, делается с любовь и нежным трепетом. Немного позже, отточив на себе наши технологии до приемлемого уровня, мы приняли волевое решение выйти из тени на сцену.<br />
-							Сейчас мы готовы предложить невероятно полный комплекс услуг по рассылке приглашений и писем на большинстве популярных датинг-сервисов.</p>
-							<h3>Хотя конкуренция в этом бизнесе весьма жесткая, все же, нам есть что предложить.</h3>
-
-							<p>Как известно, свадьба ввела жесткие санкции для пресечения рассылок, ограничив число приглашений до 8 в минуту. Кроме того, теперь постоянно нужно держать включенной веб-камеру. Многие бот программы для брачных агентств после этого потеряли свою эффективность, а у самих агентств сократился доход.</p>
-
-							<h4>Что делать, если вы также страдаете от введенных ограничений?</h4>
-
-							<p>К сожалению, подобная практика имеет весьма ненулевые шансы набрать обороты. Только представьте, если подобные ограничения введут и остальные сайты. Как тогда будут работать переводчики и модели? Вручную отсылать приглашения и часами сидеть возле компьютера? & Бизнес есть бизнес, и нужно уметь адаптироваться к подобным выходкам.</p>
-							<p>Попробуйте нашу рассылку. Просто попробуйте, можно даже никому ничего не говорить: установите приложение (ссылка на его загрузчик выше), активируйте тестовый период (это автоматизированный процесс) и у вас совершенно бесплатно появится целых два дня, чтобы оценить наши преимущества (мы не можем описывать их здесь в открытом виде, дабы не учить конкурентов). Кстати, эти два дня не обязательно использовать подряд: списываться они будут только за фактическое использование плагина. Если понравится – обратитесь в скайп (контакты ниже) и мы обсудим стоимость.</p>
-							<p>Сегодня мы предлагаем комплексное программное решение для рассылки писем и приглашений в чат для свадьбы (svadba.com), золушки (zolushka.net), чарминга (charmdate.com), амолатины (amolatina.com), arabiandate (arabiandate.com), Dating.com (dating.com), джамп (jump4love.com), iDateAsia (idateasia.com), LatamDate (latamdate.com), Marriage Agency Nataly (marriageagency-nataly.net), Mariya Club (mariya-club.com), mystep2love.com. Бот программы для рассылки приглашений в чаты на сайтах ханума (hanuma.ru), LadaDate (ladadate.com), BrideForever (bride-forever.com). Программу для брачного агентства для рассылки писем на сайте</p>
-						</div>
-						<a href="#" class="red_pill">Перейти к установке</a>
+					<div class="align_center pill_wrapp_3">
+						<a href="#" class="red_pill">Архив новостей</a>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- /Section 5 - Main Page -->
+			<!-- /Section 4 - Main Page -->
 
-		<!-- /Section 6 - Main Page -->
+			<!-- Section 5 - Main Page -->
 
-		<section class="sect_6 grey3_bg">
-			<div class="row offset_ziro">
-				<div class="thumb_2">
-					<img src="img/share.jpg" alt="" style="max-width: 100%;"/>
-					<div class="pill_wrapp_2">
-						<a href="#" class="red_pill_2"><i class="fab fa-vk"></i>Подписаться на новости</a>
+			<section class="sect_5 grey2_bg">
+				<div class="article_5_templ">
+					<div class="left_img">
+						<img src="img/left_img.jpg" alt="" />
+					</div>
+					<div class="row clearfix">
+						<div class="article_5_descript">
+							<h2>Sender.services</h2>
+							<div class="scrollbar_box">
+								<p>Изначально сервис строился для обслуживания своего бизнеса.</p>
+
+								<p>А всё то, что делается для себя, делается с любовь и нежным трепетом. Немного позже, отточив на себе наши технологии до приемлемого уровня, мы приняли волевое решение выйти из тени на сцену.<br />
+								Сейчас мы готовы предложить невероятно полный комплекс услуг по рассылке приглашений и писем на большинстве популярных датинг-сервисов.</p>
+								<h3>Хотя конкуренция в этом бизнесе весьма жесткая, все же, нам есть что предложить.</h3>
+
+								<p>Как известно, свадьба ввела жесткие санкции для пресечения рассылок, ограничив число приглашений до 8 в минуту. Кроме того, теперь постоянно нужно держать включенной веб-камеру. Многие бот программы для брачных агентств после этого потеряли свою эффективность, а у самих агентств сократился доход.</p>
+
+								<h4>Что делать, если вы также страдаете от введенных ограничений?</h4>
+
+								<p>К сожалению, подобная практика имеет весьма ненулевые шансы набрать обороты. Только представьте, если подобные ограничения введут и остальные сайты. Как тогда будут работать переводчики и модели? Вручную отсылать приглашения и часами сидеть возле компьютера? & Бизнес есть бизнес, и нужно уметь адаптироваться к подобным выходкам.</p>
+								<p>Попробуйте нашу рассылку. Просто попробуйте, можно даже никому ничего не говорить: установите приложение (ссылка на его загрузчик выше), активируйте тестовый период (это автоматизированный процесс) и у вас совершенно бесплатно появится целых два дня, чтобы оценить наши преимущества (мы не можем описывать их здесь в открытом виде, дабы не учить конкурентов). Кстати, эти два дня не обязательно использовать подряд: списываться они будут только за фактическое использование плагина. Если понравится – обратитесь в скайп (контакты ниже) и мы обсудим стоимость.</p>
+								<p>Сегодня мы предлагаем комплексное программное решение для рассылки писем и приглашений в чат для свадьбы (svadba.com), золушки (zolushka.net), чарминга (charmdate.com), амолатины (amolatina.com), arabiandate (arabiandate.com), Dating.com (dating.com), джамп (jump4love.com), iDateAsia (idateasia.com), LatamDate (latamdate.com), Marriage Agency Nataly (marriageagency-nataly.net), Mariya Club (mariya-club.com), mystep2love.com. Бот программы для рассылки приглашений в чаты на сайтах ханума (hanuma.ru), LadaDate (ladadate.com), BrideForever (bride-forever.com). Программу для брачного агентства для рассылки писем на сайте</p>
+							</div>
+							<a href="#" class="red_pill">Перейти к установке</a>
+						</div>
 					</div>
 				</div>
-				<div class="thumb_3">
-					<h3>Мы принимаем:</h3>
-					<div class="payment_thumbs offset_ziro">
-						<div class="payment_thumb">
-							<img src="img/p_02.png" alt="" />
-						</div>
-						<div class="payment_thumb">
-							<img src="img/p_06.png" alt="" />
-						</div>
-						<div class="payment_thumb">
-							<img src="img/p_03.png" alt="" />
-						</div>
-						<div class="payment_thumb">
-							<img src="img/p_04.png" alt="" />
-						</div>
-						<div class="payment_thumb">
-							<img src="img/p_01.png" alt="" />
-						</div>
-						<div class="payment_thumb">
-							<img src="img/p_05.png" alt="" />
-						</div>
-					</div>
-					<p>И многое другое</p>
-				</div>
-				<div class="thumb_3">
-					<h3>Связь с нами:</h3>
-					<div class="contacts_box">
-						<div class="contacts_title">
-							<div class="col">
-								<img src="img/mail_icon.png" alt="" />
-							</div>
-							<div class="col">
-								<p>ПОЧТА</p>
-							</div>
-						</div>
-						<ul>
-							<li><a href="mailto:info@sender.services">info@sender.services</a></li>
-						</ul>
-					</div>
-					<div class="contacts_box">
-						<div class="contacts_title">
-							<div class="col">
-								<img src="img/skype_icon.png" alt="" />
-							</div>
-							<div class="col">
-								<p>СКАЙП</p>
-							</div>
-						</div>
-						<ul>
-							<li><a href="skype:Sender.Services">Sender.Services</a></li>
-						</ul>
-					</div>
-					<div class="contacts_box">
-						<div class="contacts_title">
-							<div class="col">
-								<img src="img/telegram.png" alt="" />
-							</div>
-							<div class="col">
-								<p>Telegram</p>
-							</div>
-						</div>
-						<ul>
-							<li><a href="tg://resolve?domain=Support" alt="">@Support</a></li>
-							<li><a href="tg://resolve?domain=SenderServicesBot" alt="">@SenderServicesBot</a></li>
-							<li><a href="tg://resolve?domain=SenderServicesGroup" alt="">@SenderServicesGroup</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- /Section 6 - Main Page -->
+			<!-- /Section 5 - Main Page -->
 
-		</div>
+			<!-- /Section 6 - Main Page -->
+
+			<section class="sect_6 grey3_bg">
+				<div class="row offset_ziro">
+					<div class="thumb_2 vk_widget">
+						<div id="vk_groups"></div>
+					</div>
+					<div class="thumb_3">
+						<h3>Мы принимаем:</h3>
+						<div class="payment_thumbs offset_ziro">
+							<div class="payment_thumb">
+								<img src="img/p_02.png" alt="" />
+							</div>
+							<div class="payment_thumb">
+								<img src="img/p_06.png" alt="" />
+							</div>
+							<div class="payment_thumb">
+								<img src="img/p_03.png" alt="" />
+							</div>
+							<div class="payment_thumb">
+								<img src="img/p_04.png" alt="" />
+							</div>
+							<div class="payment_thumb">
+								<img src="img/p_01.png" alt="" />
+							</div>
+							<div class="payment_thumb">
+								<img src="img/p_05.png" alt="" />
+							</div>
+						</div>
+						<p>И многое другое</p>
+					</div>
+					<div class="thumb_3">
+						<h3>Связь с нами:</h3>
+						<div class="contacts_box">
+							<div class="contacts_title">
+								<div class="col">
+									<img src="img/mail_icon.png" alt="" />
+								</div>
+								<div class="col">
+									<p>ПОЧТА</p>
+								</div>
+							</div>
+							<ul>
+								<li><a href="mailto:info@sender.services">info@sender.services</a></li>
+							</ul>
+						</div>
+						<div class="contacts_box">
+							<div class="contacts_title">
+								<div class="col">
+									<img src="img/skype_icon.png" alt="" />
+								</div>
+								<div class="col">
+									<p>СКАЙП</p>
+								</div>
+							</div>
+							<ul>
+								<li><a href="skype:Sender.Services">Sender.Services</a></li>
+							</ul>
+						</div>
+						<div class="contacts_box">
+							<div class="contacts_title">
+								<div class="col">
+									<img src="img/telegram.png" alt="" />
+								</div>
+								<div class="col">
+									<p>Telegram</p>
+								</div>
+							</div>
+							<ul>
+								<li><a href="tg://resolve?domain=Support">@Support</a></li>
+								<li><a href="tg://resolve?domain=SenderServicesBot">@SenderServicesBot</a></li>
+								<li><a href="tg://resolve?domain=SenderServicesGroup">@SenderServicesGroup</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- /Section 6 - Main Page -->
+		</main>
+	</div>
 	<!-- /Content -->
 
 	<!-- Footer -->
 
 		<footer class="footer_section">
 			<div class="row clearfix">
-				<div class="left">
-					<div class="corp_wrapp">
-						<h3>SENDER.SERVICES © 2017</h3>
-						<a href="#" class="red_link_2">Политика конфиденциальности</a>
-					</div>
-				</div>
 				<div class="right">
 					<div class="share_wrapp">
 						<div class="col">
@@ -1018,25 +1046,29 @@
 						</div>
 					</div>
 				</div>
+				<div class="left">
+					<div class="corp_wrapp">
+						<h3>SENDER.SERVICES © 2017</h3>
+						<a href="#" class="red_link_2">Политика конфиденциальности</a>
+					</div>
+				</div>				
 			</div>
 		</footer>
 
 	<!-- /Footer -->
 
 	</div>
-
 	<link rel="stylesheet" type="text/css" href="responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 	<script src="slick/slick.js"></script>
-	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="vendors/js/jquery.fancybox.js"></script>
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/sly.js"></script>
+	<script src="js/youtubebackground.js"></script>
+	<script src="https://vk.com/js/api/openapi.js?160" async></script>
 	<script src="js/scripts.js"></script>
-
 </body>
 </html>

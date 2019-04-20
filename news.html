@@ -8,9 +8,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Denis Postolenko</title>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
+	<title>Service Sender</title>
 </head>
+
 
 <body>
 
@@ -19,11 +20,10 @@
 	<!-- Header -->
 		
 	<header>
-
 		<div class="header_site">
 			<div class="clearfix">
 				<div class="left">
-					<div class="main-nav_wrapp" id="resp_nav">
+					<div class="main_nav_wrapp" id="resp_nav">
 						<nav>
 							<ul class="main_nav">
 								<li>
@@ -42,25 +42,52 @@
 									<a href="#">кабинет агентства</a>
 								</li>
 								<li>
-									<a href="#">Вход в статистику</a>
-									<ul>
-										<li><a href="#">Link 1</a></li>
-										<li><a href="#">Link 2</a></li>
-										<li><a href="#">Link 3</a></li>
-										<li><a href="#">Link 4</a></li>
-									</ul>
+									<a href="#" class="dropdown_toggle">Вход в статистику</a>
+									<div class="dropdown_box">
+										<ul>
+											<li class="text_uppercase">Svadba (top-dates)</li>
+											<li><a href="/ru/top-dates-girl"><i class="fa fa-chevron-right"></i> Для девочки</a></li>
+											<li><a href="/ru/top-dates-translator"><i class="fa fa-chevron-right"></i> Для переводчика</a></li>
+											<li><a href="/ru/top-dates-branch"><i class="fa fa-chevron-right"></i> Для филиалов</a></li>
+											<li><a href="/ru/top-dates-operator"><i class="fa fa-chevron-right"></i> Для операторов</a></li>
+										</ul>
+										<ul>
+											<li class="text_uppercase">Prime.Date</li>
+											<li><a href="/ru/stats-prime-date-girl"><i class="fa fa-chevron-right"></i> Для девочки</a></li>
+											<li><a href="/ru/stats-prime-date-operator"><i class="fa fa-chevron-right"></i> Для операторов</a></li>
+										</ul>
+										<ul>
+											<li><a href="/ru/stats-zolushka-girl">Zolushka для девочки</a></li>
+											<li><a href="/ru/stats-zolushka-translator">Zolushka для переводчика</a></li>
+											<li><a href="/ru/stats-hanuma-girl">Hanuma для девочки</a></li>
+											<li><a href="/ru/stats-hanuma-translator">Hanuma для переводчика</a></li>
+											<li><a href="/ru/stats-dream-girl">Mime для девочки</a></li>
+											<li><a href="/ru/stats-dream-translator">Mime для переводчика</a></li>
+											<li><a href="/ru/stats-jump-girl">Jump4Love для девочки</a></li>
+											<li><a href="/ru/stats-jump-translator">Jump4Love для переводчика</a></li>
+											<li><a href="/ru/stats-romance-girl">Romance для девочки</a></li>
+											<li><a href="/ru/stats-romance-translator">Romance для переводчика</a></li>
+											<li><a href="/ru/stats-charming-girl">Charming для девочки</a></li>
+											<li><a href="/ru/stats-charming-translator">Charming для переводчика</a></li>
+										</ul>
+									</div>
 								</li>
 								<li>
 									<a href="#">TeamViewer</a>
 								</li>
 								<li>
 									<a href="#">Google Chrome</a>
-									<ul>
-										<li><a href="#">Link 1</a></li>
-										<li><a href="#">Link 2</a></li>
-										<li><a href="#">Link 3</a></li>
-										<li><a href="#">Link 4</a></li>
-									</ul>
+									<div class="dropdown_box">
+										<ul>
+											<li><a target="_blank" rel="nofollow" href="//browser.yandex.ru">Yandex Browser</a></li>
+											<li><a target="_blank" rel="nofollow" href="//www.google.com/chrome/browser/canary.html">Google Chrome Canary</a></li>
+											<li><a target="_blank" rel="nofollow" href="//www.comodo.com/home/browsers-toolbars/browser.php">Comodo Dragon</a></li>
+											<li><a target="_blank" rel="nofollow" href="//amigo.mail.ru/">Amigo Browser</a></li>
+											<li><a target="_blank" rel="nofollow" href="//torchbrowser.com/">Torch Browser</a></li>
+											<li><a target="_blank" rel="nofollow" href="//vivaldi.com/">Vivaldi</a></li>
+											<li><a target="_blank" rel="nofollow" href="//orbitum.com/">Orbitum</a></li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 						</nav>
@@ -76,18 +103,19 @@
 						<ul class="main_nav lang_menu">
 							<li>
 								<a href="#" class="active">Eng</a>
-								<ul>
-									<li><a href="#">ENG</a></li>
-									<li><a href="#">RU</a></li>
-									<li><a href="#">LAT</a></li>
-								</ul>
+								<div class="dropdown_box">
+									<ul>
+										<li class="text_uppercase">ENG</li>
+										<li><a href="/ru/top-dates-girl">RU</a></li>
+										<li><a href="/ru/top-dates-translator">LAT</a></li>
+									</ul>
+								</div>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
-								
+		</div>								
 	</header>
 
 	<!-- /Header -->
@@ -141,7 +169,7 @@
 					</div>
 
 					<div class="news_sect">
-						<div class="news_thumb clearfix">
+						<div class="news_thumb news_thumb_2 clearfix">
 							<div class="col">
 								<div class="img_box">
 									<img src="img/news_01.jpg" alt="" />
@@ -149,38 +177,42 @@
 							</div>
 							<div class="col">
 								<h4>23 новых способа оплаты услуг Sender.Services</h4>
-								<p>Мы благополучно подключили новый шлюз оплаты - Интеркассу, благодаря которой стали доступными новые способы оплаты:</p>
-								<ol class="number_list">
-									<li>Visa/MasterCard;</li>
-									<li>Приват24;</li>
-									<li>Liqpay;</li>
-									<li>Почта России</li>
-									<li>Российский банк,</li>
-									<li>Альфаклик (Альфабанк),</li>
-									<li>ЛИДЕР,</li>
-									<li>Салоны связи</li>
-								</ol>
+								<div class="thumb_desc">
+									<p>Мы благополучно подключили новый шлюз оплаты - Интеркассу, благодаря которой стали доступными новые способы оплаты:</p>
+									<ol class="number_list">
+										<li>Visa/MasterCard;</li>
+										<li>Приват24;</li>
+										<li>Liqpay;</li>
+										<li>Почта России</li>
+										<li>Российский банк,</li>
+										<li>Альфаклик (Альфабанк),</li>
+										<li>ЛИДЕР,</li>
+										<li>Салоны связи</li>
+									</ol>
+								</div>
 								<div class="align_right">
 									<a href="#" class="red_link" title="">Читать далее<i class="fas fa-angle-right"></i></a>
 								</div>
 							</div>
 						</div>
-						<div class="news_thumb clearfix">
+						<div class="news_thumb news_thumb_2 clearfix">
 							<div class="col">
 								<div class="img_box">
 									<img src="img/news_02.jpg" alt="" />
 								</div>
 							</div>
 							<div class="col">
-								<h4>В сентябре мы успешно внедрили 2 новшества:</h4>
-								<p>Сбор статистики с agency.zolushka.net;</p>
-								<p>Сохранение и просмотр истории переписки на сайтах svadba.com, amolatinaladies.com, globalcompanions.com</p>
+								<div class="thumb_desc">
+									<h4>В сентябре мы успешно внедрили 2 новшества:</h4>
+									<p>Сбор статистики с agency.zolushka.net;</p>
+									<p>Сохранение и просмотр истории переписки на сайтах svadba.com, amolatinaladies.com, globalcompanions.com</p>
+								</div>
 								<div class="align_right">
 									<a href="#" class="red_link" title="">Читать далее<i class="fas fa-angle-right"></i></a>
 								</div>
 							</div>
 						</div>
-						<div class="news_thumb clearfix">
+						<div class="news_thumb news_thumb_2 clearfix">
 							<div class="col">
 								<div class="img_box">
 									<img src="img/news_03.jpg" alt="" />
@@ -188,48 +220,60 @@
 							</div>
 							<div class="col">
 								<h4>За прошлый месяц нами реализовано:</h4>
-								<ol class="number_list">
-									<li>Сохранение и просмотр истории переписки на сайте Mime.</li>
-									<li>Новые плагины: чат для https://www.dating.com/, рассылка писем для http://office.loveme.com.</li>
-									<li>Хранение настроек рассылки на сервере. Теперь все настройки учётной записи, включая черный список и круг общения буду сохраняться на нашем сервере и в случае смены браузера или оборудования будут автоматически восстановлены.</li>
-								</ol>
+								<div class="thumb_desc">
+									<ol class="number_list">
+										<li>Сохранение и просмотр истории переписки на сайте Mime.</li>
+										<li>Новые плагины: чат для https://www.dating.com/, рассылка писем для http://office.loveme.com.</li>
+										<li>Хранение настроек рассылки на сервере. Теперь все настройки учётной записи, включая черный список и круг общения буду сохраняться на нашем сервере и в случае смены браузера или оборудования будут автоматически восстановлены.</li>
+									</ol>
+								</div>
+								<div class="align_right">
+									<a href="#" class="red_link" title="">Читать далее<i class="fas fa-angle-right"></i></a>
+								</div>
 							</div>
 						</div>
-						<div class="news_thumb clearfix">
+						<div class="news_thumb news_thumb_2 clearfix">
 							<div class="col">
 								<div class="img_box">
 									<img src="img/news_04.jpg" alt="" />
 								</div>
 							</div>
 							<div class="col">
-								<p>Наверное многие из вас замечали, что последние несколько недель наш сервер работал нестабильно и порой случались досадные разрывы соединения. Дело в том, что мы размещались на виртуальном сервере и вынуждены были делить ресурсы с соседями. Мы не могли мириться с происходящим и поэтому сегодня мы перешли на новый отдельный физический сервер. Теперь мы не зависим от соседей и работа наших сервисов должно стремительно стабилизироваться.</p>
-								<h4>А еще у нас есть два нововведения:</h4>
-								<ol class="number_list">
-									<li>Новый плагин для рассылки писем и чатов на idateasia.com.</li>
-									<li>Универсальные черные списки для администраторов агентств. Теперь администраторы агентств могут создавать предустановленные черные списки и круг общения для своих работников.</li>
-								</ol>
+								<div class="thumb_desc">
+									<p>Наверное многие из вас замечали, что последние несколько недель наш сервер работал нестабильно и порой случались досадные разрывы соединения. Дело в том, что мы размещались на виртуальном сервере и вынуждены были делить ресурсы с соседями. Мы не могли мириться с происходящим и поэтому сегодня мы перешли на новый отдельный физический сервер. Теперь мы не зависим от соседей и работа наших сервисов должно стремительно стабилизироваться.</p>
+									<h4>А еще у нас есть два нововведения:</h4>
+									<ol class="number_list">
+										<li>Новый плагин для рассылки писем и чатов на idateasia.com.</li>
+										<li>Универсальные черные списки для администраторов агентств. Теперь администраторы агентств могут создавать предустановленные черные списки и круг общения для своих работников.</li>
+									</ol>
+								</div>
+								<div class="align_right">
+									<a href="#" class="red_link" title="">Читать далее<i class="fas fa-angle-right"></i></a>
+								</div>
 							</div>
 						</div>
-						<div class="news_thumb clearfix">
+						<div class="news_thumb news_thumb_2 clearfix">
 							<div class="col">
 								<div class="img_box">
 									<img src="img/news_05.jpg" alt="" />
 								</div>
 							</div>
 							<div class="col">
-								<p>После того, как мы раздали новогодние подарки в размере 200 гривен на счет всем агентствам и по 5 активационных суток всем девочкам (без каких-либо дополнительных условий), рады сообщить о приятных нововведениях:</p>
-								<ol class="number_list">
-									<li>Конструктор сообщений для чатов. Теперь управлять фразами станет удобнее: вводите фразы по одной с новой строки, которые мужчины будут получать в случайном порядке; введите такой же набор фраз, и мужчина будет получать через 2, 4 и 6 минут после первой фразы.</li>
-									<li>Вместо смайлов автоответа (фича для свадьбы по предотвращению штрафов) теперь можно указывать свои фразы. Это позволит вам разнообразить начало общения с мужчиной. Это нововведение затронуло также и плагины для чатов на анастасии.</li>
-									<li>Сбор и обработка статистики заработков на сайтах ханума. Статистику, которую, мы раньше предлагали для top-dates.net и agency.zolushka.net - сейчас доступна и для hanuma.net.</li>
-									<li>Интерфейсы для управления переводчиками для top-dates.net . Один переводчик видит заработки по всем</li>
-								</ol>
+								<div class="thumb_desc">
+									<p>После того, как мы раздали новогодние подарки в размере 200 гривен на счет всем агентствам и по 5 активационных суток всем девочкам (без каких-либо дополнительных условий), рады сообщить о приятных нововведениях:</p>
+									<ol class="number_list">
+										<li>Конструктор сообщений для чатов. Теперь управлять фразами станет удобнее: вводите фразы по одной с новой строки, которые мужчины будут получать в случайном порядке; введите такой же набор фраз, и мужчина будет получать через 2, 4 и 6 минут после первой фразы.</li>
+										<li>Вместо смайлов автоответа (фича для свадьбы по предотвращению штрафов) теперь можно указывать свои фразы. Это позволит вам разнообразить начало общения с мужчиной. Это нововведение затронуло также и плагины для чатов на анастасии.</li>
+										<li>Сбор и обработка статистики заработков на сайтах ханума. Статистику, которую, мы раньше предлагали для top-dates.net и agency.zolushka.net - сейчас доступна и для hanuma.net.</li>
+										<li>Интерфейсы для управления переводчиками для top-dates.net . Один переводчик видит заработки по всем</li>
+									</ol>
+								</div>
 								<div class="align_right">
 									<a href="#" class="red_link" title="">Читать далее<i class="fas fa-angle-right"></i></a>
 								</div>
 							</div>
 						</div>
-						<div class="news_thumb clearfix">
+						<div class="news_thumb news_thumb_2 clearfix">
 							<div class="col">
 								<div class="img_box">
 									<img src="img/news_06.jpg" alt="" />
@@ -245,27 +289,27 @@
 								</div>
 							</div>
 						</div>
-						<div class="news_thumb clearfix">
+						<div class="news_thumb news_thumb_2 clearfix">
 							<div class="col">
 								<div class="img_box">
 									<img src="img/news_07.jpg" alt="" />
 								</div>
 							</div>
 							<div class="col">
-								<h4>Нововведения февраля:</h4>
+								<h4>Нововведения февраля:</h4>								
 								<ol class="number_list">
 									<li>Улучшена рассылка по habibidate.com - улучшена обработка онлайна.</li>
 									<li>В Дрим чат добавлена возможность ставить лимит количества отправляемых сообщений.</li>
 									<li>Наконец-то мы записали несколько видеоуроков, обзирающих основные функции программы.</li>
 									<li>Учтено пожелание свадьбы, относительно максимального числа писем одному мужчине в пределах одного агентства.</li>
 									<li>Улучшен доступ к истории переписки для чатов на свадьбе. Теперь девочки, переводчики и агентства могут получить доступ к истории общения со всеми мужчинами. Теперь историю переписки можно смотреть, даже если мужчина находится оффлайн.</li>
-								</ol>
+								</ol>								
 								<div class="align_right">
 									<a href="#" class="red_link" title="">Читать далее<i class="fas fa-angle-right"></i></a>
 								</div>
 							</div>
 						</div>
-						<div class="news_thumb clearfix">
+						<div class="news_thumb news_thumb_2 clearfix">
 							<div class="col">
 								<div class="img_box">
 									<img src="img/news_07.jpg" alt="" />
@@ -304,12 +348,6 @@
 
 		<footer class="footer_section">
 			<div class="row clearfix">
-				<div class="left">
-					<div class="corp_wrapp">
-						<h3>SENDER.SERVICES © 2017</h3>
-						<a href="#" class="red_link_2">Политика конфиденциальности</a>
-					</div>
-				</div>
 				<div class="right">
 					<div class="share_wrapp">
 						<div class="col">
@@ -326,24 +364,29 @@
 						</div>
 					</div>
 				</div>
+				<div class="left">
+					<div class="corp_wrapp">
+						<h3>SENDER.SERVICES © 2017</h3>
+						<a href="#" class="red_link_2">Политика конфиденциальности</a>
+					</div>
+				</div>				
 			</div>
 		</footer>
 
 	<!-- /Footer -->
 
 	</div>
-
 	<link rel="stylesheet" type="text/css" href="responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 	<script src="slick/slick.js"></script>
-	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script src="vendors/js/jquery.fancybox.js"></script>
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/sly.js"></script>
+	<script src="js/youtubebackground.js"></script>
+	<script src="https://vk.com/js/api/openapi.js?160" async></script>
 	<script src="js/scripts.js"></script>
 
 </body>
