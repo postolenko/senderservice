@@ -2493,7 +2493,7 @@ textarea:focus {
 /*-- Section 1 - Inner Page --*/
 
 .promo_inner_sect {
-    background-image: url(img/inner_bg.jpg)
+    background-image: url(img/inner_bg.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 141px;
