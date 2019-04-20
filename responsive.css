@@ -666,6 +666,10 @@
 	    padding: 9px 24px;
 	}
 
+	.menu_btn i.fa-angle-down {
+	    top: -9px;
+	}
+
 	/*-- /Header --*/
 
 	/*-- Section 1 - Main Page --*/
@@ -1124,6 +1128,14 @@
 	}
 
 	/*-- Section 1 - Main Page - November --*/
+
+	/*-- Section 1 - Inner Page --*/
+
+	.promo_inner_sect {
+	    background-image: url(img/inner_bg_resp.jpg)
+	}
+
+	/*-- /Section 1 - Inner Page --*/
 
 }
 
