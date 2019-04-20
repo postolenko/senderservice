@@ -666,10 +666,6 @@
 	    padding: 9px 24px;
 	}
 
-/*	.menu_btn i.fa-angle-down {
-	    top: -9px;
-	}*/
-
 	/*-- /Header --*/
 
 	/*-- Section 1 - Main Page --*/
@@ -912,6 +908,7 @@
 
 	.social_list {
 	    margin: 0;
+	    text-align: center;
 	}
 
 	.share_wrapp .col:nth-child(1) {

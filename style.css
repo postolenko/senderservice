@@ -1214,6 +1214,7 @@ textarea:focus {
 
 .social_list {
     margin: 6px -4px;
+    text-align: left;
 }
 
 .social_list li {
