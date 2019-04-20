@@ -962,8 +962,11 @@ textarea:focus {
 }
 
 .menu_btn i.fa-angle-down {
-    position: relative;
-    top: -4px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #ddd8d6;
 }
 
