@@ -257,17 +257,17 @@ $(document).ready(function() {
 
         //  VK widget
 
-        if($("#vk_groups").length > 0) {
-            try {
-                VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "auto", color1: 'FFFFFF', color2: '000', color3: '8b0202'}, 86930753);
-            } catch(error) {
-                console.log("Error calling VK.Widgets.Group", error);
-                $(".vk_widget").css({
-                    "display" : "none"
-                });
-                $(".thumb_3").addClass("w_2");
-            }
-        }
+        // if($("#vk_groups").length > 0) {
+        //     try {
+        //         VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "auto", color1: 'FFFFFF', color2: '000', color3: '8b0202'}, 86930753);
+        //     } catch(error) {
+        //         console.log("Error calling VK.Widgets.Group", error);
+        //         $(".vk_widget").css({
+        //             "display" : "none"
+        //         });
+        //         $(".thumb_3").addClass("w_2");
+        //     }
+        // }
 
         // Social
 
