@@ -269,7 +269,7 @@ ul li {
 }
 
 ol {
-    margin-left: 14px;
+    list-style-position: inside;
 }
 
 img {
@@ -1101,8 +1101,7 @@ textarea:focus {
 }
 
 .respmenubtn.active {
-    /*background: #cd2b76;*/
-    background: #000000;
+    background: #a0004a;
 }
 
 .respmenubtn.active span:last-child {
