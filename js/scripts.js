@@ -313,19 +313,28 @@ $(document).ready(function() {
     // ---------------------------
 
     //Inline install
-    $(".install").click(function(e){
+    // $(".install").click(function(e){
+    //     e.preventDefault();
+    //     chrome.webstore.install($(this).attr("href"),function(){
+    //         console.info("Sender.Services intalled");
+    //     },function(){
+    //         //open($(this).attr("href"));
+    //     }.bind(this));
+    // });
+    //Install
+    $(this).on("click",".install",function(e){
         e.preventDefault();
-        chrome.webstore.install($(this).attr("href"),function(){
+        chrome.webstore.install($(this).attr("href"), function(){
             console.info("Sender.Services intalled");
         },function(){
-            //open($(this).attr("href"));
-        }.bind(this));
+            open($(this).attr("href"));
+        });
     });
 
     $("body").removeClass("fixed");
 
-    if($("#vk_groups").length>0) {
-        VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "auto", color1: 'FFFFFF', color2: '000', color3: '8b0202'}, 86930753);
-    }
+    // if($("#vk_groups").length>0) {
+    //     VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "auto", color1: 'FFFFFF', color2: '000', color3: '8b0202'}, 86930753);
+    // }
 
 });
