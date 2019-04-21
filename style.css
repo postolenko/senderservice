@@ -1188,6 +1188,7 @@ textarea:focus {
 .promo_desc h2 {
     padding: 9px 0;
     letter-spacing: 12.5px;
+    font-family: "Ubuntu";
     font-size: 24px;
     line-height: 30px;
     font-weight: 300;
@@ -1445,55 +1446,68 @@ textarea:focus {
     padding: 10px 0 10px 2%;
 }
 
-.news_article h2 {
+.news_article h4 {
     margin-left: -1px;
     letter-spacing: 8px;
     text-transform: uppercase;
+    font-family: "PT Sans Narrow";
     font-size: 99px;
     line-height: 114px;
     color: #141414;
+    font-weight: bold;
 }
 
-.news_article h2.red_h2 {
+.news_article h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.news_article h3.red_h2 {
+    text-transform: uppercase;
     margin-left: -2px;
     letter-spacing: 10px;
+    font-family: "PT Sans Narrow";
     font-size: 128px;
     line-height: 140px;
     color: #8e0909;
 }
 
-.news_article h2.red_h2_2 {
+.news_article h3.red_h2_2 {
     margin-left: -2px;
     padding: 26px 0;
     letter-spacing: 7px;
+    font-family: "PT Sans Narrow";
     font-size: 92px;
     line-height: 100px;
     color: #8e0909;
 }
 
-.news_article h2.h2_2 {
+.news_article h4.h2_2 {
     padding-bottom: 12px;
     letter-spacing: 8px;
     text-transform: uppercase;
+    font-family: "PT Sans Narrow";
     font-size: 85px;
     line-height: 90px;
     color: #141414;
 }
 
-.news_article h2.red_h2_3 {
+.news_article h3.red_h2_3 {
     margin-left: -1px;
     padding: 35px 0 14px 0;
     letter-spacing: 1px;
+    font-family: "PT Sans Narrow";
     font-size: 70px;
     line-height: 80px;
     color: #8e0909;
 }
 
-.news_article h2.red_h2_4 {
+.news_article h3.red_h2_4 {
     margin-top: -57px;
     margin-left: -4px;
     padding: 0;
     letter-spacing: 20px;
+    font-family: "PT Sans Narrow";
     font-size: 197px;
     line-height: 197px;
     color: #8e0909;
@@ -2143,14 +2157,15 @@ textarea:focus {
     transform: translate(-50%, -50%);
 }
 
-.news_thumb h4 {
+.news_thumb h3 {
+    font-family: "Ubuntu";
     padding: 4px 0 24px 0;
     font-size: 19px;
     line-height: 24px;
     font-weight: 500;
 }
 
-.news_thumb p + h4 {
+.news_thumb p + h3 {
     padding-top: 24px;
 }
 
@@ -2257,9 +2272,11 @@ textarea:focus {
     width: 50%;
 }
 
-.article_5_descript h2 {
+.article_5_descript h3 {
     font-size: 60px;
     line-height: 70px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 .scrollbar_box {
@@ -2268,17 +2285,18 @@ textarea:focus {
     padding-right: 2%;
 }
 
-.scrollbar_box h3 {
+.scrollbar_box h4 {
     padding-bottom: 19px;
     text-transform: none;
     letter-spacing: 1px;
+    font-family: "PT Sans Narrow";
     font-size: 40px;
     line-height: 49px;
     color: #8e0909;
     font-weight: bold;
 }
 
-.scrollbar_box p + h3 {
+.scrollbar_box p + h4 {
     margin-top: -11px;
 }
 
@@ -2286,11 +2304,12 @@ textarea:focus {
     padding: 0 0 24px 0;
 }
 
-.scrollbar_box h4 {
+.scrollbar_box h5 {
     padding: 0 0 23px 0;
+    font-family: "Ubuntu";
     font-size: 19px;
     line-height: 25px;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .scrollbar_box .mCustomScrollBox {
@@ -2350,7 +2369,7 @@ textarea:focus {
     margin: 15px;
 }
 
-.thumb_3 h3 {
+.thumb_3 h4 {
     padding-bottom: 3px;
     text-transform: uppercase;
     font-size: 19px;
@@ -2474,7 +2493,7 @@ textarea:focus {
     line-height: 100px;
 }
 
-.promo_desc_2 p {
+.promo_desc_2 h2 {
     padding: 8px 0;
     font-size: 16px;
     line-height: 25px;
@@ -2666,7 +2685,7 @@ footer {
     margin: 30px 0;
 }
 
-.corp_wrapp h3 {
+.corp_wrapp h4 {
     padding: 3px 0;
     font-family: "Ubuntu";
     font-size: 15px;
@@ -2735,7 +2754,7 @@ footer {
     padding: 10px 0 10px 10px;
 }
 
-.share_wrapp h3 {
+.share_wrapp h4 {
     text-transform: uppercase;
     font-family: "Ubuntu";
     font-size: 19px;
