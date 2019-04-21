@@ -291,11 +291,11 @@ input {
     -moz-border-radius: 5px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    font-size: 12px;
+    font-size: 15px;
     line-height: 47px;
     font-family: "Ubuntu";
-    color: rgba(65, 60, 57, .6);
-    text-transform: uppercase;
+    font-weight: normal;
+    color: #141414;
 }
 
 input:focus {
@@ -314,11 +314,11 @@ textarea {
     -moz-border-radius: 5px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 25px;
     font-family: "Ubuntu";
-    color: rgba(65, 60, 57, .6);
-    text-transform: uppercase;
+    font-weight: normal;
+    color: #141414;
 }
 
 textarea:focus {
