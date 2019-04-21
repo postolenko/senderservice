@@ -322,14 +322,14 @@ $(document).ready(function() {
     //     }.bind(this));
     // });
     //Install
-    $(this).on("click",".install",function(e){
-        e.preventDefault();
-        chrome.webstore.install($(this).attr("href"), function(){
-            console.info("Sender.Services intalled");
-        },function(){
-            open($(this).attr("href"));
-        });
-    });
+    // $(this).on("click",".install",function(e){
+    //     e.preventDefault();
+    //     chrome.webstore.install($(this).attr("href"), function(){
+    //         console.info("Sender.Services intalled");
+    //     },function(){
+    //         open($(this).attr("href"));
+    //     });
+    // });
 
     $("body").removeClass("fixed");
 
