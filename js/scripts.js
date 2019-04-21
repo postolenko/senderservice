@@ -253,7 +253,6 @@ $(document).ready(function() {
 
         $(window).resize(function(){
             $(".promo_sect.video").css("max-height",$(window).height());
-            console.log($(window).height());
         }).resize();
 
         //  VK widget
@@ -312,6 +311,16 @@ $(document).ready(function() {
     }
 
     // ---------------------------
+
+    //Inline install
+    $(".install").click(function(e){
+        e.preventDefault();
+        chrome.webstore.install($(this).attr("href"),function(){
+            console.info("Sender.Services intalled");
+        },function(){
+            //open($(this).attr("href"));
+        }.bind(this));
+    });
 
     $("body").removeClass("fixed");
 
