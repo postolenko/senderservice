@@ -267,9 +267,9 @@ $(document).ready(function() {
         //     $(".thumb_3").addClass("w_2");
         // }
 
-        if($("#vk_groups").length>0) {
-            VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "auto", color1: 'FFFFFF', color2: '000', color3: '8b0202'}, 86930753);
-        }
+        // if($("#vk_groups").length>0) {
+        //     VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "auto", color1: 'FFFFFF', color2: '000', color3: '8b0202'}, 86930753);
+        // }
 
         // Social
 
@@ -314,5 +314,9 @@ $(document).ready(function() {
     // ---------------------------
 
     $("body").removeClass("fixed");
+
+    if($("#vk_groups").length>0) {
+        VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "auto", color1: 'FFFFFF', color2: '000', color3: '8b0202'}, 86930753);
+    }
 
 });
