@@ -257,12 +257,19 @@ a {
 }
 
 li {
-    list-style: none;
     font-family: "Ubuntu";
     font-size: 15px;
     line-height: 25px;
     font-weight: normal;
     color: #141414;
+}
+
+ul li {
+    list-style: none;
+}
+
+ol {
+    margin-left: 14px;
 }
 
 img {
@@ -1094,7 +1101,8 @@ textarea:focus {
 }
 
 .respmenubtn.active {
-    background: #cd2b76;
+    /*background: #cd2b76;*/
+    background: #000000;
 }
 
 .respmenubtn.active span:last-child {
@@ -1312,9 +1320,10 @@ textarea:focus {
     width: 246px;
     height: 145px;
     cursor: pointer;
-    z-index: 2;
+    z-index: 4;
     position: absolute;
-    bottom: 0;
+    /*bottom: 0;*/
+    bottom: 24px;
     left: 50%;
     -webkit-border-radius: 50% 50% 0 0;
     -moz-border-radius: 50% 50% 0 0;
@@ -2197,6 +2206,10 @@ textarea:focus {
 
 .news_thumb p + h3 {
     padding-top: 24px;
+}
+
+.news_thum ol li {
+    list-style: auto;
 }
 
 .red_link {

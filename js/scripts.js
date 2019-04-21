@@ -171,15 +171,15 @@ $(document).ready(function() {
 
     // ----------------
 
-    var countItems;
+    // var countItems;
 
-    $(".number_list").each(function() {
-        countItems = 0;
-        $(this).find("li").each(function() {
-            countItems++;
-            $(this).prepend("<span class='number'>"+countItems+".</span>");
-        });
-    });
+    // $(".number_list").each(function() {
+    //     countItems = 0;
+    //     $(this).find("li").each(function() {
+    //         countItems++;
+    //         $(this).prepend("<span class='number'>"+countItems+".</span>");
+    //     });
+    // });
 
     // ----------------
 
