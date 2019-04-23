@@ -2002,8 +2002,9 @@ textarea:focus {
 }
 
 .offer_thumb {
-    display: table;
+    display: flex;
     width: 100%;
+    max-width: 270px;
     height: 100px;
     margin: 10px;
     padding: 16px 7px 12px 7px;
@@ -2014,16 +2015,15 @@ textarea:focus {
 }
 
 .offer_thumb .col:nth-child(1) {
-    display: table-cell;
-    vertical-align: top;
     width: 59px;
     padding: 10px 2px 10px 0;
 }
 
 .offer_thumb .col:nth-child(2) {
-    display: table-cell;
-    vertical-align: top;
     width: auto;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
     padding: 14px 10px 10px 10px;
 }
 
@@ -2052,6 +2052,19 @@ textarea:focus {
 
 .offer_thumb .col:nth-child(2) p {
     line-height: 20px;
+}
+
+.offer_thumb .col:nth-child(2):after {
+    content: "";
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
 }
 
 .functions_list {
@@ -2110,7 +2123,7 @@ textarea:focus {
     height: 170px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-image: url(img/resp_bg.jpg);
 }
 
@@ -2324,6 +2337,7 @@ textarea:focus {
 .scrollbar_box {
     height: 650px;
     margin: 53px 0;
+    overflow-y: scroll;
     padding-right: 2%;
 }
 
