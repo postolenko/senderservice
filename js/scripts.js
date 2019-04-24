@@ -19,12 +19,6 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 var sly;
 
-$(window).on("load", function (e) {
-    // if( $(".scrollbar_box").length > 0 ) {
-    //     $(".scrollbar_box").mCustomScrollbar();
-    // }
-});
-
 $(window).resize(function() {
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
     if( $(".slider_2").length > 0 ) {
@@ -198,7 +192,7 @@ $(document).ready(function() {
         e.preventDefault();
         coord = $(this).attr("href");
         if(bodyWidth <= 900) {
-            top = $(coord).offset().top - $(".header_site").height();
+            top = $(coord).offset().top - $(".header_site").outerHeight(true);
         } else {
             top = $(coord).offset().top;
         }
