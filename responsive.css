@@ -1218,12 +1218,12 @@
 
 	/*-- Section 2 - Rules --*/
 
-	.content .img-left img {
+	.container .img-left img {
 		display: inline-block;
 	    margin-right: auto;
 	}
 
-	.content .img-right img {
+	.container .img-right img {
 		display: inline-block;
 	    margin-left: auto;
 	}

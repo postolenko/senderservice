@@ -34,9 +34,6 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 var sly;
 
 var slideContent;
-// var heightVal;
-// var thumbHeight;
-// var moreLinkWrapp;
 var topOffset;
 var bottomOffset;
 var innerHeight;

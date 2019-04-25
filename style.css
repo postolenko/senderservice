@@ -2808,25 +2808,25 @@ textarea:focus {
 
 /*-- Section 2 - Rules --*/
 
-.content span {
+.container span {
     color: #8e0909;
     font-weight: 600;
 }
 
-.content .img-left img {
+.container .img-left img {
     margin-right: 30px;
 }
 
-.content .img-right img {
+.container .img-right img {
     margin-left: 30px;
 }
 
-.content img {
+.container img {
     max-width: 100%;
     margin-bottom: 30px;
 }
 
-.content h4 {
+.container h4 {
     font-size: 19px;
     margin-bottom: 30px;
 }
