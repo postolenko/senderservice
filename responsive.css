@@ -262,6 +262,10 @@
 	}
 
 	.news_thumb .slide_content {
+	    max-height: 306px;
+	}
+
+	.news_thumb_2 .slide_content {
 	    max-height: 211px;
 	}
 
@@ -822,6 +826,14 @@
 
 	.news_thumb .col:nth-child(2) {
 	    padding: 13px 35px 5px 20px;
+	}
+
+	.news_thumb .slide_content {
+		max-height: 224px;
+	}
+
+	.news_thumb_2 .slide_content {
+	    max-height: 211px;
 	}
 
 	/*-- /Section 4 - Main Page --*/
