@@ -1321,7 +1321,6 @@ textarea:focus {
     cursor: pointer;
     z-index: 4;
     position: absolute;
-    /*bottom: 0;*/
     bottom: 24px;
     left: 50%;
     -webkit-border-radius: 50% 50% 0 0;
@@ -2181,6 +2180,14 @@ textarea:focus {
     border-radius: 0 15px 15px 0;
 }
 
+.slide_content {
+    padding-bottom: 0;
+}
+
+.more_link_wrapp {
+    padding-bottom: 20px;
+}
+
 .news_thumb .img_box {
     height: 380px;
     overflow: hidden;
@@ -2222,18 +2229,6 @@ textarea:focus {
 
 .news_thum ol li {
     list-style: auto;
-}
-
-.more_link_wrapp {
-    display: none;
-}
-
-.more_link_wrapp.visible {
-    display: block;
-}
-
-.slide_content {
-    overflow: hidden;
 }
 
 .red_link {
@@ -2286,6 +2281,49 @@ textarea:focus {
     position: absolute;
     top: 2px;
     right: -11px;
+}
+
+.news_thumb .hide {
+    display: none;
+}
+
+.news_thumb.active .hide {
+    display: inline;
+}
+
+.news_thumb .show_more {
+    display: inline;
+}
+
+.news_thumb.active .show_more {
+    display: none;
+}
+
+.news_thumb .slide_content {
+    overflow: hidden;
+    max-height: 282px;
+    position: relative;
+}
+
+.news_thumb .slide_content:after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+
+.news_thumb.active .slide_content:after {
+    display: none;
+}
+
+.news_thumb.active .slide_content {
+    max-height: unset !important;
 }
 
 .pill_wrapp_3 {
@@ -2734,10 +2772,6 @@ textarea:focus {
     text-transform: uppercase;
     margin-bottom: 30px;
     line-height: 1.1;
-}
-
-.rules {
-
 }
 
 .rules h1,

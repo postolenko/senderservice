@@ -137,7 +137,10 @@
 			<!-- /Картинки для Сеньтября -->
 
 			<div class="video_wrapp">
-				 <div id="video"></div>
+				<div id="video"></div>
+				<a href="#more" class="scroll_down">
+					<p>Узнать больше</p>
+				</a>
 			</div>
 			<div class="row">
 				<div class="center">					
@@ -217,11 +220,24 @@
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
 	<script src="slick/slick.js"></script>
-	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/sly.js"></script>
 	<script src="js/youtubebackground.js"></script>
-	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?160" async></script>
+	<script src="https://vk.com/js/api/openapi.js?160"></script>
 	<script src="js/scripts.js"></script>
+	<script type="text/javascript">
+		if($("#vk_groups").length > 0) {
+            try {
+                VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "auto", color1: 'FFFFFF', color2: '000', color3: '8E0909'}, 86930753);
+            } catch(error) {
+                console.log("Error calling VK.Widgets.Group", error);
+                $(".vk_widget").css({
+                    "display" : "none"
+                });
+                $(".thumb_3").addClass("w_2");
+            }
+        }
+	</script>
 
 </body>
 </html>

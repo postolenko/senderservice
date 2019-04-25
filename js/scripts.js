@@ -11,6 +11,20 @@ function getHeaderParams() {
  }
 }
 
+function getNewsTHumbnailsParams() {
+    $(".news_thumb").each(function() {
+        slideContent = $(this).find(".slide_content");
+        topOffset = parseInt( slideContent.css("padding-top") );
+        bottomOffset = parseInt( slideContent.css("padding-bottom") );
+        innerHeight = slideContent.find(".inner_height").height() + topOffset + bottomOffset;
+        if(slideContent.height() >= innerHeight) {
+            $(this).find(".more_link_wrapp").css('display', 'none');
+        } else {
+            $(this).find(".more_link_wrapp").css('display', 'block');
+        }
+    });
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -19,12 +33,21 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 var sly;
 
+var slideContent;
+// var heightVal;
+// var thumbHeight;
+// var moreLinkWrapp;
+var topOffset;
+var bottomOffset;
+var innerHeight;
+
 $(window).resize(function() {
     bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
     if( $(".slider_2").length > 0 ) {
         sly.reload();
     }
     getHeaderParams();
+    getNewsTHumbnailsParams();
 });
 
 $(document).scroll(function() {
@@ -34,6 +57,7 @@ $(document).scroll(function() {
 $(document).ready(function() {
 
     getHeaderParams();
+    getNewsTHumbnailsParams();
 
     $("body").addClass("fixed");
 
@@ -286,23 +310,15 @@ $(document).ready(function() {
 
     // ---------------------------
 
-    var slideContent;
-    var heightVal;
-    var thumbHeight;
-    var moreLinkWrapp;
-
-    $(".news_thumb").each(function() {
-        var slideContent = $(this).find(".slide_content");
-        var heightVal = $(this).find(".slide_inner").height();
-        var moreLinkWrapp = $(this).find(".more_link_wrapp");
-        var thumbHeight = $(this).find(".col:eq(0)").height() - moreLinkWrapp.height();        
-        if(slideContent.height() <= thumbHeight) {
-            moreLinkWrapp.removeClass("visible");
-        } else {            
-            slideContent.height(thumbHeight);
-            moreLinkWrapp.addClass("visible");
+    $(".news_btn").click(function(e) {
+        e.preventDefault();
+        parentBLock = $(this).closest(".news_thumb");
+        slideContent = parentBLock.find(".slide_content");
+        if( parentBLock.hasClass("active") ) {
+            parentBLock.removeClass("active");
+        } else {
+            parentBLock.addClass("active");
         }
-        console.log($(this).find(".col:eq(1)").height());
     });
 
     // ---------------------------
