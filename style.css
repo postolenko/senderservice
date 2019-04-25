@@ -2120,11 +2120,11 @@ textarea:focus {
 
 .resp_bg {
     display: none;
-    height: 170px;
+    height: 330px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    background-image: url(img/resp_bg.jpg);
+    background-image: url(img/girls.jpg);
 }
 
 /*-- /Responsive BG - Main Page --*/

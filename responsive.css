@@ -815,6 +815,10 @@
 	    width: 100%;
 	}
 
+	.resp_bg {
+		display: block;
+	}
+
 	/*-- /Section 5 - Main Page --*/
 
 	/*-- Section 2 - Inner Page --*/
@@ -1049,14 +1053,6 @@
 	}
 
 	/*-- /Section 3 - Main Page --*/
-
-	/*-- Responsive BG - Main Page --*/
-
-	.resp_bg {
-	    display: block;
-	}
-
-	/*-- /Responsive BG - Main Page --*/
 
 	/*-- Section 1 - Main Page - February --*/
 
