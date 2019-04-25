@@ -2224,6 +2224,18 @@ textarea:focus {
     list-style: auto;
 }
 
+.more_link_wrapp {
+    display: none;
+}
+
+.more_link_wrapp.visible {
+    display: block;
+}
+
+.slide_content {
+    overflow: hidden;
+}
+
 .red_link {
     display: inline-block;
     vertical-align: top;
@@ -2713,6 +2725,146 @@ textarea:focus {
 }
 
 /*-- /Section 2 - Inner Page --*/
+
+/*-- Section 2 - Privacy Policy --*/
+
+.container h1 {
+    font-size: 99px;
+    color: #8e0909;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+.rules {
+
+}
+
+.rules h1,
+.rules h2,
+.rules h3,
+.rules h4,
+.rules h5 {
+    font-family: "PT Sans Narrow";
+    font-weight: 600;
+    margin: 0;
+    word-break: normal;
+    line-height: 1.1;
+}
+
+.container {
+    padding: 30px 0;
+}
+
+.container p {
+    padding-bottom: 20px;
+}
+
+.rules h3 {
+    font-size: 1.75rem;
+}
+
+.rules p {
+    padding-left: 30px;
+}
+
+/*-- /Section 2 - Privacy Policy --*/
+
+/*-- Section 2 - Rules --*/
+
+.content span {
+    color: #8e0909;
+    font-weight: 600;
+}
+
+.content .img-left img {
+    margin-right: 30px;
+}
+
+.content .img-right img {
+    margin-left: 30px;
+}
+
+.content img {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.content h4 {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+/*-- /Section 2 - Rules --*/
+
+/*-- Section 2 - Video --*/
+
+.feautures-video .card {
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.card-block {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.feautures-video .card-text {
+    font-size: 15px;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.card {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.feautures-video .card-block {
+    background-color: #fafafa;
+    padding: 20px 10px;
+}
+
+.feautures-video .card_wrapp {
+    width: calc(50% - 15px);
+    margin: 5px 15px;
+}
+
+.feautures-video .card_wrapp:nth-child(odd) {
+    float: left;
+    margin: 5px 15px 5px 0;
+}
+
+.feautures-video .card_wrapp:nth-child(even) {
+    float: right;
+    margin: 5px 0 5px 15px;
+}
+
+.feautures-video p {
+    padding-bottom: 0;
+}
+
+.card-text span {
+    font-weight: 400;
+}
+
+/*-- /Section 2 - Video --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */

@@ -349,6 +349,15 @@
 
 	/*-- /Section 1 - Main Page - September --*/
 
+	/*-- Section 2 - Privacy Policy --*/
+
+	.container h1 {
+	    font-size: 79px !important;
+	    line-height: 95px !important;
+	}
+
+	/*-- /Section 2 - Privacy Policy --*/
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -890,6 +899,15 @@
 
 	/*-- /Section 1 - Main Page - June --*/
 
+	/*-- Section 2 - Privacy Policy --*/
+
+	.container h1 {
+	    font-size: 60px !important;
+	    line-height: 81px !important;
+	}
+
+	/*-- /Section 2 - Privacy Policy --*/
+
 	/*-- Footer --*/
 
 	.footer_section {
@@ -1134,6 +1152,63 @@
 	}
 
 	/*-- /Section 1 - Inner Page --*/
+
+	/*-- Section 2 - Privacy Policy --*/
+
+	.container h1 {
+	    font-size: 42px !important;
+	    line-height: 55px !important;
+	}
+
+	.container p {
+		padding-left: 10px;
+	    font-size: 14px;
+	    line-height: 19px;
+	}
+
+	.rules h3 {
+	    font-size: 20px;
+	}
+
+	/*-- /Section 2 - Privacy Policy --*/
+
+	/*-- Section 2 - Rules --*/
+
+	.content .img-left img {
+		display: inline-block;
+	    margin-right: auto;
+	}
+
+	.content .img-right img {
+		display: inline-block;
+	    margin-left: auto;
+	}
+
+	.img-left,
+	.img-right {
+		display: block;
+		float: none;
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	/*-- /Section 2 - Rules --*/
+
+	/*-- Section 2 - Video --*/
+
+	.feautures-video .card_wrapp:nth-child(odd) {
+		width: 100%;
+	    float: none;
+	    margin: 5px 0;
+	}
+
+	.feautures-video .card_wrapp:nth-child(even) {
+		width: 100%;
+	    float: none;
+	    margin: 5px 0;
+	}
+
+	/*-- /Section 2 - Video --*/
 
 }
 
@@ -1423,6 +1498,19 @@
 	}
 
 	/*-- /Section 1 - Main Page - July --*/
+
+	/*-- Section 2 - Privacy Policy --*/
+
+	.container h1 {
+	    font-size: 28px !important;
+	    line-height: 38px !important;
+	}
+
+	.rules h3 {
+	    font-size: 18px;
+	}
+
+	/*-- /Section 2 - Privacy Policy --*/
 
 }
 

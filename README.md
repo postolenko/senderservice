@@ -12,3 +12,6 @@
 # http://postolenko.github.io/senderservice/october.html
 # http://postolenko.github.io/senderservice/november.html
 # http://postolenko.github.io/senderservice/december.html
+# http://postolenko.github.io/senderservice/privacy_policy.html
+# http://postolenko.github.io/senderservice/rules.html
+# http://postolenko.github.io/senderservice/video.html
