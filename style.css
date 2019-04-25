@@ -2207,6 +2207,8 @@ textarea:focus {
     height: auto;
     min-width: 100%;
     min-height: 100%;
+    max-width: unset;
+    max-height: unset;
     position: absolute;
     top: 50%;
     left: 50%;
