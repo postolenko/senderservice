@@ -2601,6 +2601,19 @@ textarea:focus {
     line-height: 100px;
 }
 
+.promo_desc_2 h5 {
+    font-family: "PT Sans Narrow";
+    font-size: 98px;
+    line-height: 100px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 9px 0;
+    -webkit-text-shadow: 1.5px 2.598px 0 rgba(9, 12, 18, .28);
+    -moz-text-shadow: 1.5px 2.598px 0 rgba(9, 12, 18, .28);
+    text-shadow: 1.5px 2.598px 0 rgba(9, 12, 18, .28);
+    letter-spacing: 11px;
+}
+
 .promo_desc_2 h2 {
     padding: 8px 0;
     font-size: 16px;
@@ -2608,8 +2621,19 @@ textarea:focus {
     letter-spacing: 9px;
 }
 
+.promo_desc_2 h6 {
+    padding: 8px 0;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 9px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
 .promo_desc_2 .social_list {
     margin: 12px -4px;
+    text-align: center;
 }
 
 /*-- /Section 1 - Inner Page --*/
@@ -2769,7 +2793,7 @@ textarea:focus {
 /*-- Section 2 - Privacy Policy --*/
 
 .container h1 {
-    font-size: 99px;
+    font-size: 50px;
     color: #8e0909;
     text-transform: uppercase;
     margin-bottom: 30px;
