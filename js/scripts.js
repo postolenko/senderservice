@@ -192,7 +192,11 @@ $(document).ready(function() {
     $(".scroll_down").click(function(e) {
         e.preventDefault();
         coord = $(this).attr("href");
-        top = $(coord).offset().top;
+        if(bodyWidth <= 900) {
+            top = $(coord).offset().top - $(".header_site").outerHeight(true);
+        } else {
+            top = $(coord).offset().top;
+        }
         $('body,html').animate({scrollTop: top}, 1500);
     });
 

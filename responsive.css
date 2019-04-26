@@ -1037,15 +1037,7 @@
 	/*-- Section 2 - Main Page --*/
 
 	.news_article .left {
-	    width: 100%;
-	    float: none;
-	    padding: 10px 0;
-	}
-
-	.news_article .right {
-	    width: 100%;
-	    float: none;
-	    padding: 10px 0;
+	    padding-top: 5px;
 	}
 
 	.slick-arrow {
@@ -1056,6 +1048,21 @@
 	.red_pill {
 	    padding: 14px 25px 14px 29px;
 	    font-size: 12px;
+	}
+
+	.news_article h3.red_h2 {
+	    font-size: 58px;
+	    line-height: 60px;
+	}
+
+	.news_article h3.red_h2_2 {
+	    font-size: 62px;
+	    line-height: 64px;
+	}
+
+	.news_article h3.red_h2_4 {
+	    font-size: 69px;
+	    line-height: 69px;
 	}
 
 	/*-- /Section 2 - Main Page --*/
@@ -1330,6 +1337,11 @@
 
 	/*-- Section 2 - Main Page --*/
 
+	.slider_news_wrapp {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+
 	.news_article h4 {
 	    font-size: 35px;
 	    line-height: 43px;
@@ -1350,8 +1362,8 @@
 	}
 
 	.news_article h3.red_h2_4 {
-	    font-size: 71px;
-	    line-height: 75px;
+		font-size: 53px;
+		line-height: 61px;
 	}
 
 	.news_article .img_box {
@@ -1366,7 +1378,13 @@
 	}
 
 	.slick-arrow {
-	    top: 211px;
+		top: 100%;
+		margin-top: -30px;
+	}
+
+	.news_article h3.red_h2 {
+	    font-size: 41px;
+	    line-height: 44px;
 	}
 
 	.news_article h3.red_h2_2 {
@@ -1381,10 +1399,19 @@
 
 	.slick-dots {
 	    margin: 7px 0;
+	    padding: 0 60px;
 	}
 
 	.news_article {
 	    margin-bottom: 5px;
+	}
+
+	.slick-prev {
+	    left: 15px;
+	}
+
+	.slick-next {
+	    right: 15px;
 	}
 
 	/*-- /Section 2 - Main Page --*/
@@ -1644,47 +1671,16 @@
 
 	/*-- Section 2 - Main Page --*/
 
-	.slick-arrow {
-	    top: 100%;
-		margin-top: -26px;
+	.news_article .left {
+	    width: 100%;
+	    float: none;
+	    padding: 10px 0;
 	}
 
-	.slick-prev {
-		left: 5px;
-	}
-
-	.slick-next {
-		right: 5px;
-	}
-
-	.slider_news_wrapp {
-	    padding-left: 5px;
-	    padding-right: 5px;
-	}
-
-	.news_article h3.red_h2 {
-	    font-size: 47px;
-	    line-height: 55px;
-	}
-
-	.news_article h3.red_h2_2 {
-	    font-size: 33px;
-	    line-height: 37px;
-	}
-
-	.news_article h3.red_h2_3 {
-	    font-size: 30px;
-	    line-height: 32px;
-	}
-
-	.news_article h3.red_h2_4 {
-	    font-size: 54px;
-	    line-height: 59px;
-	}
-
-	.slick-dots {
-	    margin: 12px 0;
-	    padding: 0 50px;
+	.news_article .right {
+	    width: 100%;
+	    float: none;
+	    padding: 10px 0;
 	}
 
 	.slick-dots li button {
